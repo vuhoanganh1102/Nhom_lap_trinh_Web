@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles_for_slider.css">
     <link rel="stylesheet" href="/assets/css/tyles_for_header.css">
-    <link rel="stylesheet" href="/assets/css/styles_for_slider.css">
+    <link rel="stylesheet" href="/assets/css/themify-icons.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <title>Shop bán mỹ phẩm</title>
     <style>
+        /*#banner{
+            background: url("/assets/img/top_banner.png");
+            
+            height: 70px;
+            display: block;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }*/
         #slider .slider1{
             background:url();
         }
@@ -30,8 +38,9 @@
     </style>
 </head>
 <body>
-    <div class="banner">
-        <img src="/assets/img/top_banner.png" alt="" style="width: 100%; height:70px;">
+    <div id="banner">
+        <div class="top_banner"></div>
+        <!--<img src="/assets/img/top_banner.png" alt="" style="width: 100%; height:70px;">-->
     </div>
     <header>
         <div class="nav">
@@ -40,7 +49,16 @@
                         <a href=""><img src="/assets/img/logo.png" alt="" style="width: 248px;"></a>
                     </div>
                     <div class="search n1">
-                        <i class="ti-search"></i>
+                        
+                        <form action="/search" method="get" role="search"></form>
+                        <input type="text" style="border: 2px solid black; width: 273px;">
+                        <input type="hidden" name="type" value="product">
+                        <span class="input-group">
+                            <button type="submit" style="background-color: #d82e4d; cursor: pointer;width: 57px;height: 36px; " aria-label="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Search</title><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+                            </button>
+                        </span>
+                        
                     </div>
                     <div class="box n1">
                         <ul>
@@ -54,8 +72,17 @@
             </div>
             <div class="nav2">
                 <ul class="none-menu">
-                    <li class="hot n2"><a href="#">ƯU ĐÃI HOT</a></li>
-                    <li class="makeup n2"><a href="#">Trang điểm</a></li>
+                    <li class="hot n2">
+                        <a href="#">
+                            ƯU ĐÃI HOT
+                            <svg style="color: #fff;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                        </a>
+                    </li>
+                    <li class="makeup n2">
+                        <a href="#">
+                            Trang điểm
+                        </a>
+                    </li>
                     <li class="skincare n2"><a href="#">Chăm sóc da</a></li>
                     <li class="bodycare n2"><a href="#">Chăm sóc cơ thể</a></li>
                     <li class="haircare n2"><a href="#">Chăm sóc tóc</a></li>

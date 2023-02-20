@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -5,16 +6,25 @@
     border: none;
     list-style-type: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
-body{
-    
-}
-body>.banner{
+
+
+#banner{
     position: relative;
+    background-color: #ffaeb4;
     width: 100%;
     height: 70px;
 }
-.banner img{
+#banner .top_banner{
+    position: absolute;
+    background: url("/assets/img/top_banner.png");
+    left: 2%;
+    right: 2%;
+    height: 100%;
+    width: 96%;
+    display: block;
+    background-repeat: no-repeat;
     background-size: contain;
 }
 header{
@@ -26,15 +36,7 @@ header .nav{
     height: 152px;
 
 }
-header .nav1 a,
-header .nav2 a{
-    color: black;
-    text-decoration: none;
-}
-header .box li,
-header .nav2 li{
-    float: left;
-}
+
 header .nav1{
     position: relative;
     background-color: #fff;
@@ -63,7 +65,7 @@ header .img img{
 header .search{
     position: relative;
     display:flex;
-    background-color: aquamarine;
+    background-color:#fff;
     height: 36px;
     width: 360px;
     left: 0;
@@ -72,7 +74,11 @@ header .search{
     line-height: 36px;
     box-sizing: border-box;
 }
-
+header .search svg{
+    color: #fff;
+    width: 17px;
+    height: 17px;
+}
 header .box{
     position: relative;
     display: block;
@@ -119,19 +125,25 @@ header .box{
     line-height: 83px;
     width: 200px;
 }
+
 header .nav2{
-    background-color:#e5677d;
-    display: flex;
-    width: 100%;
+    background-color: #e5677d;
     height: 49px;
-}  
-header .posi-fixed .n2{
-    padding: 15px 17px;
+    width: 100%;
+}
+header .nav2 li{
+    float: left;
+    padding-left: 32px;
     display: block;
+    height: 49px;
 }
-header .nav2 .n2:hover{
-    background-color:aliceblue;
+header .nav2 a{
+    color: #fff;
+    text-align: center;
+    line-height: 49px;
+    display: block;
+    height: 49px;
 }
-.slider{
-    
+header .nav2 a:hover{
+    color:black;
 }
