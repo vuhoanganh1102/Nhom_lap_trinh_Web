@@ -34,7 +34,6 @@ header .nav{
     background-color:#fff;
     width: 100%;
     height: 152px;
-
 }
 
 header .nav1{
@@ -84,11 +83,130 @@ header .box{
     display: block;
     height: 44px;
     width: 720px;
-    background-color: #e5677d;
     left: 0;
     top: 19px;
     text-align: center;
 }
+header .box li{
+    float: left;
+    display: block;
+    height: 44px;
+}
+header .box>ul a{
+    color: #000;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400px;
+}
+header .box .sup{
+    padding-left: 55px;
+}
+header .box .sup>p
+{   
+    display: block;
+    height: 21px;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400px;
+}
+header .box .sup>img{
+    position: relative;
+    right: 45px;
+    bottom: 15px;
+    width: 32px;
+    height: 32px;
+}
+header .box .sup>a{
+    position: relative;
+    bottom: 18px;
+    right: 47px;
+}
+header .box .acc{
+    padding-left: 48px;
+    padding-right:15px ;
+}
+header .box .acc>.acc1
+{   
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    
+}
+header .box .acc>img{
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    right: 32px;
+    bottom: 16px;
+}
+header .box .acc>.login{
+    position: relative;
+    display: inline-block;
+    bottom:32px;
+    font-size: 12px;
+    right: 1px;
+}
+header .box .basket{
+    display: block;
+    width: 134px;
+    height: 44px;
+    border: #da677c solid 4px!important;
+}
+header .box .basket img{
+    position: relative;
+    display: block;
+    top:4px;
+    height: 32px;
+    width: 32px;
+    bottom: 30px;
+}
+header .box .basket .basket1{
+    position: relative;
+    display: inline-block;
+    bottom: 22px;
+    left: 3px;
+}
+header .box .bill a{
+    position: relative;
+    left: 46px;
+    bottom: 36px;
+}
+header .box .bill a
+{   
+    display: block;
+    margin-top:5px ;
+}
+header .box .bill img{
+    position: relative; 
+    width: 32px;
+    top: 6px;
+    height: 32px;
+}
+header .box .System{
+    position: relative;
+    left:100px;
+}
+header .box .System img{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    right: 46px;
+    top: 6px;
+}
+header .box .System a
+{   
+    position: relative;
+    display: block;
+    bottom: 30px;
+    left: 2px;
+}
+
+header .box li .n2:hover{
+    color: #ffaeb4;
+}
+/*
 .sup{
     position: absolute;
     display: block;
@@ -125,7 +243,7 @@ header .box{
     line-height: 83px;
     width: 200px;
 }
-
+*/
 header .nav2{
     background-color: #e5677d;
     height: 49px;
@@ -143,7 +261,16 @@ header .nav2 a{
     line-height: 49px;
     display: block;
     height: 49px;
+    font-weight: 400px;
+    font-size: 14px;
+    font-family: sans-serif;
 }
-header .nav2 a:hover{
+header .nav2 .n2{
+    color: #fff;
+    width:11px; 
+    height:13px;
+}
+header .nav2 a:hover,
+header .nav2 a:hover .n2{
     color:black;
 }
