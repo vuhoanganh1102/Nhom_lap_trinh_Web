@@ -27,10 +27,10 @@
                     <div class="search">
                         
                         <form action="/search" method="get" role="search"></form>
-                        <input type="text" style="border: 2px solid black; width: 273px;">
+                        <input type="text" style="border:2px solid grey;border-radius:20px 0 0 20px; black; width: 273px; text-align: center;">
                         <input type="hidden" name="type" value="product">
                         <span class="input-group">
-                            <button type="submit" style="background-color: #d82e4d; cursor: pointer;width: 57px;height: 36px; " aria-label="search">
+                            <button type="submit" style="background-color: #d82e4d; cursor: pointer;width: 57px;height: 36px;border-radius: 0 20px 20px 0; " aria-label="search">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Search</title><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
                             </button>
                         </span>
@@ -144,12 +144,20 @@
         <div class="container">
             <div class="myslider n1" ></div>
             <div class="myslider n2"></div>
-            <div class="prev" onclick="pushSlide(-1)">❮</div>
-            <div class="prev" onclick="pushSlide(1)">❯</div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align: center;">
+                <span class="dot" onclick=""></span>
+                <span class="dot" onclick=""></span>
+            </div>
         </div>
         <script>
             let SlideIndex=0;
             showSlides();
+            function plusSlides(n){
+                showSlides(SlideIndex+=n)
+            }
             function showSlides(){
                 let i;
                 let slides=document.getElementsByClassName("myslider");
