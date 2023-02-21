@@ -72,13 +72,22 @@
                     <li class="hot">
                         <a href="#">
                             ƯU ĐÃI HOT
+                            
                             <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                            <!--<ul class="menu1">
+                                <li><a href="#">ƯU ĐÃI HOT, ĐỪNG BỎ LỠ</a></li>
+                                <li><a href="#">MUA 1 TẶNG 1</a></li>
+                            </ul>-->
                         </a>
+                        
                     </li>
                     <li class="makeup">
                         <a href="#">
                             Trang điểm
                             <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                            <ul>
+                                
+                            </ul>
                         </a>
                     </li>
                     <li class="skincare">
@@ -138,58 +147,55 @@
                 </ul>
             </div>
         </div>
-    
-    </header>
-    <div id="slider">
-        <div class="container">
-            <div class="myslider n1" ></div>
-            <div class="myslider n2"></div>
-            <div class="myslider n3"></div> 
-            <!-- Next and previous buttons -->
-            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-            <button class="next" onclick="plusSlides(1)">&#10095;</button>
-            <div style="text-align: center;">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
+        <div id="slider">
+            <div class="container">
+                <div class="myslider n1" ></div>
+                <div class="myslider n2"></div>
+                <div class="myslider n3"></div> 
+                
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
             </div>
+            <script>
+                let SlideIndex=1;
+                show();
+                function show(){
+                    let i;
+                    let slides=document.getElementsByClassName("myslider");
+                    for(i=0; i< slides.length; i++){
+                        slides[i].style.display="none";
+                    }
+                    if(SlideIndex > slides.length)SlideIndex=1;
+                    slides[SlideIndex-1].style.display="block";
+                    SlideIndex++;
+                    setTimeout(show,7000);
+                }
+                showSlides(SlideIndex);
+                function plusSlides(n){
+                    showSlides(SlideIndex+=n);
+                }
+                function currentSlide(n){
+                    showSlides(SlideIndex=n);
+                }
+                function showSlides(n){
+                    let i;
+                    let slides=document.getElementsByClassName("myslider");
+                    if(n < 1)SlideIndex=slides.length;
+                    if(n > slides.length)SlideIndex=1;
+                    for(i=0; i< slides.length; i++){
+                        slides[i].style.display="none";
+                    }
+                    slides[SlideIndex-1].style.display="block";
+                }
+                
+            </script> 
         </div>
-        <script>
-            let SlideIndex=1;
-            show();
-            function show(){
-                let i;
-                let slides=document.getElementsByClassName("myslider");
-                for(i=0; i< slides.length; i++){
-                    slides[i].style.display="none";
-                }
-                if(SlideIndex > slides.length)SlideIndex=1;
-                slides[SlideIndex-1].style.display="block";
-                SlideIndex++;
-                setTimeout(show,7000);
-            }
-            showSlides(SlideIndex);
-            function plusSlides(n){
-                showSlides(SlideIndex+=n);
-            }
-            function currentSlide(n){
-                showSlides(SlideIndex=n);
-            }
-            function showSlides(n){
-                let i;
-                let slides=document.getElementsByClassName("myslider");
-                if(n < 1)SlideIndex=slides.length;
-                if(n > slides.length)SlideIndex=1;
-                for(i=0; i< slides.length; i++){
-                    slides[i].style.display="none";
-                }
-                slides[SlideIndex-1].style.display="block";
-            }
-            
-        </script>
-        
-    </div>
+    </header>
     <div class="content">
-
     </div>
     <footer></footer>    
 </body>

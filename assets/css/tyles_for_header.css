@@ -206,44 +206,6 @@ header .box .System a
 header .box li .n2:hover{
     color: #ffaeb4;
 }
-/*
-.sup{
-    position: absolute;
-    display: block;
-    background-color:;
-    left: ;
-    height: 83px;
-    width: 250px;
-    text-align: center;
-    line-height: 83px;
-}
-.posi-fixed .acc{
-    display: block;
-    background-color:;
-    height: 83px;
-    width: 120px;
-    text-align: center;
-    line-height: 83px;
-}
-
-.posi-fixed .basket{
-    display: block;
-    background-color:;
-    height: 83px;
-    width: 134px;
-    text-align: center;
-    line-height: 83px;
-    
-}
-
-.posi-fixed .bill{
-    display: block;
-    background-color:;
-    text-align: center;
-    line-height: 83px;
-    width: 200px;
-}
-*/
 header .nav2{
     background-color: #e5677d;
     height: 49px;
@@ -273,4 +235,21 @@ header .nav2 .n2{
 header .nav2 a:hover,
 header .nav2 a:hover .n2{
     color:black;
+}
+/*header .nav2 .menu1{
+    display: block;
+    width: 210px;
+    height: 70px;
+    background-color:rebeccapurple;
+    padding-left: 32px;
+}
+header .nav2 .menu1>li{
+    padding-left: 0px;
+}
+header .nav2 .menu1>a{
+    position
+    display: inline-block;
+    width: 210px;
+    height: 30px;
+    background-color: rebeccapurple;
 }
