@@ -142,12 +142,25 @@
     </header>
     <div id="slider">
         <div class="container">
-            <div class="slider1" ></div>
-            <div class="slider2"></div>
+            <div class="myslider n1" ></div>
+            <div class="myslider n2"></div>
+            <div class="prev" onclick="pushSlide(-1)">❮</div>
+            <div class="prev" onclick="pushSlide(1)">❯</div>
         </div>
         <script>
-            let SlideIndex=1;
-            function
+            let SlideIndex=0;
+            showSlides();
+            function showSlides(){
+                let i;
+                let slides=document.getElementsByClassName("myslider");
+                for(i=0; i< slides.length; i++){
+                    slides[i].style.display="none";
+                }
+                SlideIndex++;
+                if(SlideIndex > slides.length)SlideIndex=1;
+                slides[SlideIndex-1].style.display="block";
+                setTimeout(showSlides,3000);//change image in 3 seconds
+            }
         </script>
     </div>
     <div class="content">
