@@ -113,14 +113,14 @@ header .box .sup>p
     font-family: sans-serif;
     font-weight: 400px;
 }
-header .box .sup>img{
+header .box .sup >img{
     position: relative;
     right: 45px;
     bottom: 15px;
     width: 32px;
     height: 32px;
 }
-header .box .sup>a{
+header .box .sup >a{
     position: relative;
     bottom: 18px;
     right: 47px;

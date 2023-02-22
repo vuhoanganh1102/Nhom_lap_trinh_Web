@@ -1,4 +1,4 @@
-#content>.container {
+.container {
     background-color: var(--primary-color);
     padding: 12px 40px;
 }

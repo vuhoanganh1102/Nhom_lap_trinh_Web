@@ -23,13 +23,13 @@
 <body>
     <div id="banner">
         <div class="top_banner"></div>
-        <!--<img src="/assets/img/top_banner.png" alt="" style="width: 100%; height:70px;">-->
+        <img src="./assets/img/top_banner.png" alt="" style="width: 100%; height:70px;">
     </div>
     <header>
         <div class="nav">
             <div class="nav1">
                     <div class="img">
-                        <a href=""><img src="/assets/img/logo.png" alt="" style="width: 248px;"></a>
+                        <a href=""><img src="./assets/img/logo.png" alt="" style="width: 248px;"></a>
                     </div>
                     <div class="search">
                         
@@ -46,29 +46,29 @@
                         <ul>
                             <li class="sup n1">
                                 <p >Hỗ trợ khách hàng</p>
-                                <img src="/assets/img/phone-icon.webp" alt="">
+                                <img src="./assets/img/phone-icon.webp" alt="">
                                 <a class="n2" href="#">19002613</a>
                                 
                             </li>
                             <li class="acc n1">
                                 <a class="acc1 n2"href="#">Tài khoản</a>
-                                <img src="/assets/img/account-icon.webp" alt="">
+                                <img src="./assets/img/account-icon.webp" alt="">
                                 <a class="login n2"href="#">Đăng nhập</a>
                             </li>
                             <li class="basket n1">
-                                <a href=""><img src="/assets/img/cart-icon.webp" alt=""></a>
+                                <a href=""><img src="./assets/img/cart-icon.webp" alt=""></a>
                                 <a class="basket1 n2"href="#">Giỏ hàng</a>
 
                             </li>
                             <li class="bill n1">
-                                <img src="/assets/img/policy_header_image_3.webp" alt="">
+                                <img src="./assets/img/policy_header_image_3.webp" alt="">
                                 <a class="n2" href="#">
                                     Kiểm tra</br>đơn hàng
                                 </a>
 
                             </li>
                             <li class="System n1">
-                                <img src="/assets/img/policy_header_image_4.webp" alt="">
+                                <img src="./assets/img/policy_header_image_4.webp" alt="">
                                 <a class="n2" href="#">Hệ thống</br>của hàng</a>
                             </li>
                         </ul>
@@ -154,146 +154,654 @@
                 </ul>
             </div>
         </div>
-        <div id="slider">
-            <div class="container">
-                <div class="myslider n1" ></div>
-                <div class="myslider n2"></div>
-                <div class="myslider n3"></div> 
-                
-                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-                <button class="next" onclick="plusSlides(1)">&#10095;</button>
-                <div style="text-align: center;">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
+    </header>
+    <div id="slider">
+        <div class="banner__container">
+            <div class="myslider n1">
+                <img src="./assets/img/banner1.jpg" alt="" class="myslider__img">
+            </div>
+            <div class="myslider n2">
+                <img src="./assets/img/banner2.jpg" alt="" class="myslider__img">
+            </div>
+            <div class="myslider n3">
+                <img src="./assets/img/banner3.jpg" alt="" class="myslider__img">
+            </div> 
+            
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container__content">
+            <div class="container__header">
+                <div class="container__header--boxtime">
+                    <div class="container__header--boxtime--title">
+                        <a href="#" class="container__boxtime--title-link">ƯU ĐÃI HOT, ĐỪNG BỎ LỠ!!</a>
+                        <p class="container__boxtime--title--paragraph">Sản phẩm sẽ trở về giá gốc khi hết giờ</p>
+                    </div>
+                    <div class="container__header__boxtime-time">
+                        <div class="container__header__boxtime-hour">
+                            <span class="container-hour">02</span>
+                            <span class="container-time--unit">Giờ</span>
+                        </div>
+                        <div class="container__header__boxtime-hour">
+                            <span class="container-minute">45</span>
+                            <span class="container-time--unit">Phút</span>
+                        </div>
+                        <div class="container__header__boxtime-hour">
+                            <span class="container-second">49</span>
+                            <span class="container-time--unit">Giây</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__box--promotion">
+                    <h2 class="container__promotion">BẢN TIN KHUYẾN MÃI</h2>
                 </div>
             </div>
-            <script>
-                let SlideIndex=1;
-                show();
-                function show(){
-                    let i;
-                    let slides=document.getElementsByClassName("myslider");
-                    for(i=0; i< slides.length; i++){
-                        slides[i].style.display="none";
-                    }
-                    if(SlideIndex > slides.length)SlideIndex=1;
-                    slides[SlideIndex-1].style.display="block";
-                    SlideIndex++;
-                    setTimeout(show,7000);
-                }
-                showSlides(SlideIndex);
-                function plusSlides(n){
-                    showSlides(SlideIndex+=n);
-                }
-                function currentSlide(n){
-                    showSlides(SlideIndex=n);
-                }
-                function showSlides(n){
-                    let i;
-                    let slides=document.getElementsByClassName("myslider");
-                    if(n < 1)SlideIndex=slides.length;
-                    if(n > slides.length)SlideIndex=1;
-                    for(i=0; i< slides.length; i++){
-                        slides[i].style.display="none";
-                    }
-                    slides[SlideIndex-1].style.display="block";
-                }
-                
-            </script> 
-        </div>
-    </header>
-    <div id="content">
-        <div class="container">
-            <div class="container__content">
-                <div class="container__header">
-                    <div class="container__header--boxtime">
-                        <div class="container__header--boxtime--title">
-                            <a href="#" class="container__boxtime--title-link">ƯU ĐÃI HOT, ĐỪNG BỎ LỠ!!</a>
-                            <p class="container__boxtime--title--paragraph">Sản phẩm sẽ trở về giá gốc khi hết giờ</p>
+            <div class="container__content--primary">
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items1.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items1-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -73% 
                         </div>
-                        <div class="container__header__boxtime-time">
-                            <div class="container__header__boxtime-hour">
-                                <span class="container-hour">02</span>
-                                <span class="container-time--unit">Giờ</span>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">SIMPLE</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                COMBO 2 Simple Nước Hoa Hồng Kind To Skin Soothing Facial Toner 200ml (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>109,000₫</b></span>
+                                <span class="compare-price">400,000₫</span>
+                                <div class="compare-price--pseudo"></div>
                             </div>
-                            <div class="container__header__boxtime-hour">
-                                <span class="container-minute">45</span>
-                                <span class="container-time--unit">Phút</span>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">1577</b> sản phẩm đã bán
                             </div>
-                            <div class="container__header__boxtime-hour">
-                                <span class="container-second">49</span>
-                                <span class="container-time--unit">Giây</span>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 53%;">
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="container__box--promotion">
-                        <h2 class="container__promotion">BẢN TIN KHUYẾN MÃI</h2>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items2.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items2-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -25% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">BNBG</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Whitening Jelly Mask - Vitamin C (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>165,000₫</b></span>
+                                <span class="compare-price">220,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">2563</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 85%;">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="container__content--primary">
-                    <div class="container__content--primary--items">
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items1.jpg" alt="" class="container__product-img img-primary">
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items3.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items3-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -28% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
                             </a>
                         </div>
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items1-1.jpg" alt="" class="container__product-img img-secondary">
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">DR.G</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Dr.G Kem chống nắng Brightening Up Sun+ SPF50+ PA+++
                             </a>
-                        </div>
-                        <div class="label_product">
-                            <div class="label_wrapper">
-                                -73% 
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>381,000₫</b></span>
+                                <span class="compare-price">530,000₫</span>
+                                <div class="compare-price--pseudo"></div>
                             </div>
-                        </div>
-                        <div class="product--action">
-                            <div class="group__prodcut--action">
-                                <a href="#" class="product--action--links btn">
-                                    <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
                                 </a>
-                            </div>
+                            </button>
                         </div>
-                        <div class="container--items-content">
-                            <span class="product-vendor">SIMPLE</span>
-                            <h3 class="product-name">
-                                <a href="#" class="product-name-link">
-                                    COMBO 2 Simple Nước Hoa Hồng Kind To Skin Soothing Facial Toner 200ml (IP01)
-                                </a>
-                            </h3>
-                            <div class="product-price-box">
-                                <div class="product-price">
-                                    <span class="price"><b>109,000₫</b></span>
-                                    <span class="compare-price">400,000₫</span>
-                                    <div class="compare-price--pseudo"></div>
-                                </div>
-                                <button class="add--cart" title="Thêm giở hàng">
-                                    <a href="#" class="add--cart--link">
-                                        <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                    </a>
-                                </button>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">2384</b> sản phẩm đã bán
                             </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">1577</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 53%;">
-    
-                                    </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 80%;">
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="container__content--primary--items">
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items4.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items4-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -25% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">BNBG</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Relaxing Jelly Mask - Vitamin B (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>165,000₫</b></span>
+                                <span class="compare-price">220,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">1994</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 67%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items5.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items5-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -24% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">EXCLUSIVE</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                COMBO 2 Exclusive Tẩy da chết toàn thân Scrub Coffee & Cinnamon 380ml (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>169,000₫</b></span>
+                                <span class="compare-price">222,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">1215</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 41%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items6.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items6-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -25% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">PYUNKANG YUL</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Pyunkang Yul Kem chống nắng ATO Mild Sun Cream 75ml (IP04)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>311,250</b></span>
+                                <span class="compare-price">415,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">2774</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 93%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items7.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items7-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -25% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">BNBG</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Lifting Jelly Mask - Vitamin A (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>165,000₫</b></span>
+                                <span class="compare-price">220,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">2998</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 90%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items8.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items8-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -33% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">SKIN1004</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                [MUA 1 TẶNG 1] Skin1004 Nước hoa hồng Madagascar Centella Tone Brightening Boosting Toner 210ml (KHÔNG ÁP DỤNG MÃ GIẢM GIÁ)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>375,200₫</b></span>
+                                <span class="compare-price">560,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">2145</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 72%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items9.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items9-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -25% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">BNBG</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Hydrating Jelly Mask - Vitamin E (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>165,000₫</b></span>
+                                <span class="compare-price">220,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">2775</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 93%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items10.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items10-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -25% 
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">BY WISHTREND</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                [MUA 1 TẶNG 1] By Wishtrend Sữa rửa mặt Green tea & Enzyme Powder Wash 70g (KHÔNG ÁP DỤNG MÃ GIẢM GIÁ)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>363,750₫</b></span>
+                                <span class="compare-price">485,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">1726</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 58%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-view-box">
+                <a href="" class="btn-view">Xem tất cả
+                    <ion-icon name="chevron-forward-outline" class="btn--right"></ion-icon>
+                </a>
+            </div>
+        </div>    
+    </div>
+    <div class="container__second">
+        <div class="container__content">
+            <div class="container__header--boxtime--title">
+                <a href="#" class="container__boxtime--title-link">Hàng Mới Về</a>
+            </div>
+        </div>
+        <div class="container__second--content">
+            <div class="container__second--best-seller">
+                <div class="container__box--best-seller">
+                    <a href="#" class="container__second-link">
+                        <img src="./assets/img/bestseller.jpg" alt="" class="container__second-img">
+                    </a>
+                </div>
+                <div class="container__second--best-product">
+                    <div class="btn-view-box btn-best-product">
+                        <a href="" class="btn-view btn-small">Son môi
+                        </a>
+                    </div>
+                    <div class="btn-view-box btn-best-product">
+                        <a href="" class="btn-view btn-small">Son dưỡng
+                        </a>
+                    </div>
+                    <div class="btn-view-box btn-best-product">
+                        <a href="" class="btn-view btn-small">Phẩn phủ
+                        </a>
+                    </div>
+                    <div class="btn-view-box btn-best-product">
+                        <a href="" class="btn-view btn-small">Phấn mắt
+                        </a>
+                    </div>
+                    <div class="btn-view-box btn-best-product">
+                        <a href="" class="btn-view btn-small">Kem nền
+                        </a>
+                    </div>
+                    <div class="btn-view-box btn-best-product">
+                        <a href="" class="btn-view btn-small">Che khuyết điểm
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container__second--product-box">
+                <div class="container__second--list-product">
+                    <div class="container__content--primary--items contianer__content-primary--items-second">
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items2.jpg" alt="" class="container__product-img img-primary">
+                                <img src="./assets/img/itemssecond1.jpg" alt="" class="container__product-img img-primary">
                             </a>
                         </div>
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items2-1.jpg" alt="" class="container__product-img img-secondary">
+                                <img src="./assets/img/itemssecond1-1.jpg" alt="" class="container__product-img img-secondary">
                             </a>
                         </div>
                         <div class="label_product">
@@ -309,16 +817,16 @@
                             </div>
                         </div>
                         <div class="container--items-content">
-                            <span class="product-vendor">BNBG</span>
+                            <span class="product-vendor">PYUNKANG YUL</span>
                             <h3 class="product-name">
                                 <a href="#" class="product-name-link">
-                                    Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Whitening Jelly Mask - Vitamin C (IP01)
+                                    Pyunkang Yul Nước hoa hồng Essence Toner (IP04)
                                 </a>
                             </h3>
                             <div class="product-price-box">
                                 <div class="product-price">
-                                    <span class="price"><b>165,000₫</b></span>
-                                    <span class="compare-price">220,000₫</span>
+                                    <span class="price"><b>33,750₫</b></span>
+                                    <span class="compare-price">45,000₫</span>
                                     <div class="compare-price--pseudo"></div>
                                 </div>
                                 <button class="add--cart" title="Thêm giở hàng">
@@ -327,189 +835,17 @@
                                     </a>
                                 </button>
                             </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">2563</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 85%;">
-    
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="container__content--primary--items">
+                    <div class="container__content--primary--items contianer__content-primary--items-second">
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items3.jpg" alt="" class="container__product-img img-primary">
+                                <img src="./assets/img/itemssecond2.jpg" alt="" class="container__product-img img-primary">
                             </a>
                         </div>
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items3-1.jpg" alt="" class="container__product-img img-secondary">
-                            </a>
-                        </div>
-                        <div class="label_product">
-                            <div class="label_wrapper">
-                                -28% 
-                            </div>
-                        </div>
-                        <div class="product--action">
-                            <div class="group__prodcut--action">
-                                <a href="#" class="product--action--links btn">
-                                    <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="container--items-content">
-                            <span class="product-vendor">DR.G</span>
-                            <h3 class="product-name">
-                                <a href="#" class="product-name-link">
-                                    Dr.G Kem chống nắng Brightening Up Sun+ SPF50+ PA+++
-                                </a>
-                            </h3>
-                            <div class="product-price-box">
-                                <div class="product-price">
-                                    <span class="price"><b>381,000₫</b></span>
-                                    <span class="compare-price">530,000₫</span>
-                                    <div class="compare-price--pseudo"></div>
-                                </div>
-                                <button class="add--cart" title="Thêm giở hàng">
-                                    <a href="#" class="add--cart--link">
-                                        <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                    </a>
-                                </button>
-                            </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">2384</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 80%;">
-    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container__content--primary--items">
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items4.jpg" alt="" class="container__product-img img-primary">
-                            </a>
-                        </div>
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items4-1.jpg" alt="" class="container__product-img img-secondary">
-                            </a>
-                        </div>
-                        <div class="label_product">
-                            <div class="label_wrapper">
-                                -25% 
-                            </div>
-                        </div>
-                        <div class="product--action">
-                            <div class="group__prodcut--action">
-                                <a href="#" class="product--action--links btn">
-                                    <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="container--items-content">
-                            <span class="product-vendor">BNBG</span>
-                            <h3 class="product-name">
-                                <a href="#" class="product-name-link">
-                                    Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Relaxing Jelly Mask - Vitamin B (IP01)
-                                </a>
-                            </h3>
-                            <div class="product-price-box">
-                                <div class="product-price">
-                                    <span class="price"><b>165,000₫</b></span>
-                                    <span class="compare-price">220,000₫</span>
-                                    <div class="compare-price--pseudo"></div>
-                                </div>
-                                <button class="add--cart" title="Thêm giở hàng">
-                                    <a href="#" class="add--cart--link">
-                                        <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                    </a>
-                                </button>
-                            </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">1994</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 67%;">
-    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container__content--primary--items">
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items5.jpg" alt="" class="container__product-img img-primary">
-                            </a>
-                        </div>
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items5-1.jpg" alt="" class="container__product-img img-secondary">
-                            </a>
-                        </div>
-                        <div class="label_product">
-                            <div class="label_wrapper">
-                                -24% 
-                            </div>
-                        </div>
-                        <div class="product--action">
-                            <div class="group__prodcut--action">
-                                <a href="#" class="product--action--links btn">
-                                    <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="container--items-content">
-                            <span class="product-vendor">EXCLUSIVE</span>
-                            <h3 class="product-name">
-                                <a href="#" class="product-name-link">
-                                    COMBO 2 Exclusive Tẩy da chết toàn thân Scrub Coffee & Cinnamon 380ml (IP01)
-                                </a>
-                            </h3>
-                            <div class="product-price-box">
-                                <div class="product-price">
-                                    <span class="price"><b>169,000₫</b></span>
-                                    <span class="compare-price">222,000₫</span>
-                                    <div class="compare-price--pseudo"></div>
-                                </div>
-                                <button class="add--cart" title="Thêm giở hàng">
-                                    <a href="#" class="add--cart--link">
-                                        <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                    </a>
-                                </button>
-                            </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">1215</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 41%;">
-    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container__content--primary--items">
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items6.jpg" alt="" class="container__product-img img-primary">
-                            </a>
-                        </div>
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items6-1.jpg" alt="" class="container__product-img img-secondary">
+                                <img src="./assets/img/itemssecond2-1.jpg" alt="" class="container__product-img img-secondary">
                             </a>
                         </div>
                         <div class="label_product">
@@ -533,7 +869,7 @@
                             </h3>
                             <div class="product-price-box">
                                 <div class="product-price">
-                                    <span class="price"><b>311,250</b></span>
+                                    <span class="price"><b>311,250₫</b></span>
                                     <span class="compare-price">415,000₫</span>
                                     <div class="compare-price--pseudo"></div>
                                 </div>
@@ -543,32 +879,22 @@
                                     </a>
                                 </button>
                             </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">2774</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 93%;">
-    
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="container__content--primary--items">
+                    <div class="container__content--primary--items contianer__content-primary--items-second">
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items7.jpg" alt="" class="container__product-img img-primary">
+                                <img src="./assets/img/itemssecond3.jpg" alt="" class="container__product-img img-primary">
                             </a>
                         </div>
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items7-1.jpg" alt="" class="container__product-img img-secondary">
+                                <img src="./assets/img/itemssecond3-1.jpg" alt="" class="container__product-img img-secondary">
                             </a>
                         </div>
                         <div class="label_product">
                             <div class="label_wrapper">
-                                -25% 
+                                -28% 
                             </div>
                         </div>
                         <div class="product--action">
@@ -579,16 +905,16 @@
                             </div>
                         </div>
                         <div class="container--items-content">
-                            <span class="product-vendor">BNBG</span>
+                            <span class="product-vendor">NATURE REPUBLIC</span>
                             <h3 class="product-name">
                                 <a href="#" class="product-name-link">
-                                    Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Lifting Jelly Mask - Vitamin A (IP01)
+                                    Nature Republic Bảng phấn mắt Daily Basic Palette (IP04)
                                 </a>
                             </h3>
                             <div class="product-price-box">
                                 <div class="product-price">
-                                    <span class="price"><b>165,000₫</b></span>
-                                    <span class="compare-price">220,000₫</span>
+                                    <span class="price"><b>205,200₫</b></span>
+                                    <span class="compare-price">285,000₫</span>
                                     <div class="compare-price--pseudo"></div>
                                 </div>
                                 <button class="add--cart" title="Thêm giở hàng">
@@ -597,27 +923,17 @@
                                     </a>
                                 </button>
                             </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">2998</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 90%;">
-    
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="container__content--primary--items">
+                    <div class="container__content--primary--items contianer__content-primary--items-second">
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items8.jpg" alt="" class="container__product-img img-primary">
+                                <img src="./assets/img/itemssecond4.jpg" alt="" class="container__product-img img-primary">
                             </a>
                         </div>
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items8-1.jpg" alt="" class="container__product-img img-secondary">
+                                <img src="./assets/img/itemssecond4-1.jpg" alt="" class="container__product-img img-secondary">
                             </a>
                         </div>
                         <div class="label_product">
@@ -636,13 +952,13 @@
                             <span class="product-vendor">SKIN1004</span>
                             <h3 class="product-name">
                                 <a href="#" class="product-name-link">
-                                    [MUA 1 TẶNG 1] Skin1004 Nước hoa hồng Madagascar Centella Tone Brightening Boosting Toner 210ml (KHÔNG ÁP DỤNG MÃ GIẢM GIÁ)
+                                    Skin1004 TC chống nắng Madagascar Centella Hyalu-cica Water-fit Sun Serum SPF50+ PA++++ 50ml (IP04)
                                 </a>
                             </h3>
                             <div class="product-price-box">
                                 <div class="product-price">
-                                    <span class="price"><b>375,200₫</b></span>
-                                    <span class="compare-price">560,000₫</span>
+                                    <span class="price"><b>331,650₫</b></span>
+                                    <span class="compare-price">495,000₫</span>
                                     <div class="compare-price--pseudo"></div>
                                 </div>
                                 <button class="add--cart" title="Thêm giở hàng">
@@ -651,27 +967,149 @@
                                     </a>
                                 </button>
                             </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">2145</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 72%;">
-    
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="container__content--primary--items">
+                    <div class="container__content--primary--items contianer__content-primary--items-second">
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items9.jpg" alt="" class="container__product-img img-primary">
+                                <img src="./assets/img/itemssecond5.jpg" alt="" class="container__product-img img-primary">
                             </a>
                         </div>
                         <div class="container--items--img">
                             <a href="#">
-                                <img src="./assets/img/items9-1.jpg" alt="" class="container__product-img img-secondary">
+                                <img src="./assets/img/itemssecond5-1.jpg" alt="" class="container__product-img img-secondary">
+                            </a>
+                        </div>
+                        <div class="label_product">
+                            <div class="label_wrapper">
+                                -20% 
+                            </div>
+                        </div>
+                        <div class="product--action">
+                            <div class="group__prodcut--action">
+                                <a href="#" class="product--action--links btn">
+                                    <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container--items-content">
+                            <span class="product-vendor">NATURE REPUBLIC</span>
+                            <h3 class="product-name">
+                                <a href="#" class="product-name-link">
+                                    Nature Republic Chuốt mi Botanical Mood Wear Curl Fix Mascara (màu 01 Black) 7g (IP04)
+                                </a>
+                            </h3>
+                            <div class="product-price-box">
+                                <div class="product-price">
+                                    <span class="price"><b>196,000₫</b></span>
+                                    <span class="compare-price">245,000₫</span>
+                                    <div class="compare-price--pseudo"></div>
+                                </div>
+                                <button class="add--cart" title="Thêm giở hàng">
+                                    <a href="#" class="add--cart--link">
+                                        <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__content--primary--items contianer__content-primary--items-second">
+                        <div class="container--items--img">
+                            <a href="#">
+                                <img src="./assets/img/itemssecond6.jpg" alt="" class="container__product-img img-primary">
+                            </a>
+                        </div>
+                        <div class="container--items--img">
+                            <a href="#">
+                                <img src="./assets/img/itemssecond6-1.jpg" alt="" class="container__product-img img-secondary">
+                            </a>
+                        </div>
+                        <div class="label_product">
+                            <div class="label_wrapper">
+                                -30% 
+                            </div>
+                        </div>
+                        <div class="product--action">
+                            <div class="group__prodcut--action">
+                                <a href="#" class="product--action--links btn">
+                                    <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container--items-content">
+                            <span class="product-vendor">BLACK ROUGE</span>
+                            <h3 class="product-name">
+                                <a href="#" class="product-name-link">
+                                    Black Rouge Son Thỏi Wearable Velvet Lipstick
+                                </a>
+                            </h3>
+                            <div class="product-price-box">
+                                <div class="product-price">
+                                    <span class="price"><b>236,600₫</b></span>
+                                    <span class="compare-price">338,000₫</span>
+                                    <div class="compare-price--pseudo"></div>
+                                </div>
+                                <button class="add--cart" title="Thêm giở hàng">
+                                    <a href="#" class="add--cart--link">
+                                        <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__content--primary--items contianer__content-primary--items-second">
+                        <div class="container--items--img">
+                            <a href="#">
+                                <img src="./assets/img/itemssecond7.jpg" alt="" class="container__product-img img-primary">
+                            </a>
+                        </div>
+                        <div class="container--items--img">
+                            <a href="#">
+                                <img src="./assets/img/itemssecond8-1.jpg" alt="" class="container__product-img img-secondary">
+                            </a>
+                        </div>
+                        <div class="label_product">
+                            <div class="label_wrapper">
+                                -30% 
+                            </div>
+                        </div>
+                        <div class="product--action">
+                            <div class="group__prodcut--action">
+                                <a href="#" class="product--action--links btn">
+                                    <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container--items-content">
+                            <span class="product-vendor">LAPALETTE BEAUTY</span>
+                            <h3 class="product-name">
+                                <a href="#" class="product-name-link">
+                                    Lapalette Beauty Tinh chất giàu VITAMIN C sáng da chống lão hóa Yellow Double C Serum 35ml (IP02)
+                                </a>
+                            </h3>
+                            <div class="product-price-box">
+                                <div class="product-price">
+                                    <span class="price"><b>489,300₫</b></span>
+                                    <span class="compare-price">699,000₫</span>
+                                    <div class="compare-price--pseudo"></div>
+                                </div>
+                                <button class="add--cart" title="Thêm giở hàng">
+                                    <a href="#" class="add--cart--link">
+                                        <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__content--primary--items contianer__content-primary--items-second">
+                        <div class="container--items--img">
+                            <a href="#">
+                                <img src="./assets/img/itemssecond8.jpg" alt="" class="container__product-img img-primary">
+                            </a>
+                        </div>
+                        <div class="container--items--img">
+                            <a href="#">
+                                <img src="./assets/img/itemssecond8-1.jpg" alt="" class="container__product-img img-secondary">
                             </a>
                         </div>
                         <div class="label_product">
@@ -687,16 +1125,16 @@
                             </div>
                         </div>
                         <div class="container--items-content">
-                            <span class="product-vendor">BNBG</span>
+                            <span class="product-vendor">FRESKA</span>
                             <h3 class="product-name">
                                 <a href="#" class="product-name-link">
-                                    Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Hydrating Jelly Mask - Vitamin E (IP01)
+                                    Freska Nước tẩy trang Micellar Sensitive Cleansing Water 400ml (IP04)
                                 </a>
                             </h3>
                             <div class="product-price-box">
                                 <div class="product-price">
-                                    <span class="price"><b>165,000₫</b></span>
-                                    <span class="compare-price">220,000₫</span>
+                                    <span class="price"><b>141,000₫</b></span>
+                                    <span class="compare-price">188,000₫</span>
                                     <div class="compare-price--pseudo"></div>
                                 </div>
                                 <button class="add--cart" title="Thêm giở hàng">
@@ -704,70 +1142,6 @@
                                         <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
                                     </a>
                                 </button>
-                            </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">2775</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 93%;">
-    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container__content--primary--items">
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items10.jpg" alt="" class="container__product-img img-primary">
-                            </a>
-                        </div>
-                        <div class="container--items--img">
-                            <a href="#">
-                                <img src="./assets/img/items10-1.jpg" alt="" class="container__product-img img-secondary">
-                            </a>
-                        </div>
-                        <div class="label_product">
-                            <div class="label_wrapper">
-                                -25% 
-                            </div>
-                        </div>
-                        <div class="product--action">
-                            <div class="group__prodcut--action">
-                                <a href="#" class="product--action--links btn">
-                                    <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="container--items-content">
-                            <span class="product-vendor">BY WISHTREND</span>
-                            <h3 class="product-name">
-                                <a href="#" class="product-name-link">
-                                    [MUA 1 TẶNG 1] By Wishtrend Sữa rửa mặt Green tea & Enzyme Powder Wash 70g (KHÔNG ÁP DỤNG MÃ GIẢM GIÁ)
-                                </a>
-                            </h3>
-                            <div class="product-price-box">
-                                <div class="product-price">
-                                    <span class="price"><b>363,750₫</b></span>
-                                    <span class="compare-price">485,000₫</span>
-                                    <div class="compare-price--pseudo"></div>
-                                </div>
-                                <button class="add--cart" title="Thêm giở hàng">
-                                    <a href="#" class="add--cart--link">
-                                        <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                    </a>
-                                </button>
-                            </div>
-                            <div class="flashsale__bottom">
-                                <div class="flashsale__label">
-                                    <b class="flashsale__sold-qty">1726</b> sản phẩm đã bán
-                                </div>
-                                <div class="flashsale__progressbar">
-                                    <div class="flashsale___percent" style="width: 58%;">
-    
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -777,414 +1151,12 @@
                         <ion-icon name="chevron-forward-outline" class="btn--right"></ion-icon>
                     </a>
                 </div>
-            </div>    
-        </div>
-        <div class="container__second">
-            <div class="container__content">
-                <div class="container__header--boxtime--title">
-                    <a href="#" class="container__boxtime--title-link">Hàng Mới Về</a>
-                </div>
-            </div>
-            <div class="container__second--content">
-                <div class="container__second--best-seller">
-                    <div class="container__box--best-seller">
-                        <a href="#" class="container__second-link">
-                            <img src="./assets/img/bestseller.jpg" alt="" class="container__second-img">
-                        </a>
-                    </div>
-                    <div class="container__second--best-product">
-                        <div class="btn-view-box btn-best-product">
-                            <a href="" class="btn-view btn-small">Son môi
-                            </a>
-                        </div>
-                        <div class="btn-view-box btn-best-product">
-                            <a href="" class="btn-view btn-small">Son dưỡng
-                            </a>
-                        </div>
-                        <div class="btn-view-box btn-best-product">
-                            <a href="" class="btn-view btn-small">Phẩn phủ
-                            </a>
-                        </div>
-                        <div class="btn-view-box btn-best-product">
-                            <a href="" class="btn-view btn-small">Phấn mắt
-                            </a>
-                        </div>
-                        <div class="btn-view-box btn-best-product">
-                            <a href="" class="btn-view btn-small">Kem nền
-                            </a>
-                        </div>
-                        <div class="btn-view-box btn-best-product">
-                            <a href="" class="btn-view btn-small">Che khuyết điểm
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container__second--product-box">
-                    <div class="container__second--list-product">
-                        <div class="container__content--primary--items contianer__content-primary--items-second">
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond1.jpg" alt="" class="container__product-img img-primary">
-                                </a>
-                            </div>
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond1-1.jpg" alt="" class="container__product-img img-secondary">
-                                </a>
-                            </div>
-                            <div class="label_product">
-                                <div class="label_wrapper">
-                                    -25% 
-                                </div>
-                            </div>
-                            <div class="product--action">
-                                <div class="group__prodcut--action">
-                                    <a href="#" class="product--action--links btn">
-                                        <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="container--items-content">
-                                <span class="product-vendor">PYUNKANG YUL</span>
-                                <h3 class="product-name">
-                                    <a href="#" class="product-name-link">
-                                        Pyunkang Yul Nước hoa hồng Essence Toner (IP04)
-                                    </a>
-                                </h3>
-                                <div class="product-price-box">
-                                    <div class="product-price">
-                                        <span class="price"><b>33,750₫</b></span>
-                                        <span class="compare-price">45,000₫</span>
-                                        <div class="compare-price--pseudo"></div>
-                                    </div>
-                                    <button class="add--cart" title="Thêm giở hàng">
-                                        <a href="#" class="add--cart--link">
-                                            <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container__content--primary--items contianer__content-primary--items-second">
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond2.jpg" alt="" class="container__product-img img-primary">
-                                </a>
-                            </div>
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond2-1.jpg" alt="" class="container__product-img img-secondary">
-                                </a>
-                            </div>
-                            <div class="label_product">
-                                <div class="label_wrapper">
-                                    -25% 
-                                </div>
-                            </div>
-                            <div class="product--action">
-                                <div class="group__prodcut--action">
-                                    <a href="#" class="product--action--links btn">
-                                        <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="container--items-content">
-                                <span class="product-vendor">PYUNKANG YUL</span>
-                                <h3 class="product-name">
-                                    <a href="#" class="product-name-link">
-                                        Pyunkang Yul Kem chống nắng ATO Mild Sun Cream 75ml (IP04)
-                                    </a>
-                                </h3>
-                                <div class="product-price-box">
-                                    <div class="product-price">
-                                        <span class="price"><b>311,250₫</b></span>
-                                        <span class="compare-price">415,000₫</span>
-                                        <div class="compare-price--pseudo"></div>
-                                    </div>
-                                    <button class="add--cart" title="Thêm giở hàng">
-                                        <a href="#" class="add--cart--link">
-                                            <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container__content--primary--items contianer__content-primary--items-second">
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond3.jpg" alt="" class="container__product-img img-primary">
-                                </a>
-                            </div>
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond3-1.jpg" alt="" class="container__product-img img-secondary">
-                                </a>
-                            </div>
-                            <div class="label_product">
-                                <div class="label_wrapper">
-                                    -28% 
-                                </div>
-                            </div>
-                            <div class="product--action">
-                                <div class="group__prodcut--action">
-                                    <a href="#" class="product--action--links btn">
-                                        <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="container--items-content">
-                                <span class="product-vendor">NATURE REPUBLIC</span>
-                                <h3 class="product-name">
-                                    <a href="#" class="product-name-link">
-                                        Nature Republic Bảng phấn mắt Daily Basic Palette (IP04)
-                                    </a>
-                                </h3>
-                                <div class="product-price-box">
-                                    <div class="product-price">
-                                        <span class="price"><b>205,200₫</b></span>
-                                        <span class="compare-price">285,000₫</span>
-                                        <div class="compare-price--pseudo"></div>
-                                    </div>
-                                    <button class="add--cart" title="Thêm giở hàng">
-                                        <a href="#" class="add--cart--link">
-                                            <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container__content--primary--items contianer__content-primary--items-second">
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond4.jpg" alt="" class="container__product-img img-primary">
-                                </a>
-                            </div>
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond4-1.jpg" alt="" class="container__product-img img-secondary">
-                                </a>
-                            </div>
-                            <div class="label_product">
-                                <div class="label_wrapper">
-                                    -33% 
-                                </div>
-                            </div>
-                            <div class="product--action">
-                                <div class="group__prodcut--action">
-                                    <a href="#" class="product--action--links btn">
-                                        <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="container--items-content">
-                                <span class="product-vendor">SKIN1004</span>
-                                <h3 class="product-name">
-                                    <a href="#" class="product-name-link">
-                                        Skin1004 TC chống nắng Madagascar Centella Hyalu-cica Water-fit Sun Serum SPF50+ PA++++ 50ml (IP04)
-                                    </a>
-                                </h3>
-                                <div class="product-price-box">
-                                    <div class="product-price">
-                                        <span class="price"><b>331,650₫</b></span>
-                                        <span class="compare-price">495,000₫</span>
-                                        <div class="compare-price--pseudo"></div>
-                                    </div>
-                                    <button class="add--cart" title="Thêm giở hàng">
-                                        <a href="#" class="add--cart--link">
-                                            <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container__content--primary--items contianer__content-primary--items-second">
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond5.jpg" alt="" class="container__product-img img-primary">
-                                </a>
-                            </div>
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond5-1.jpg" alt="" class="container__product-img img-secondary">
-                                </a>
-                            </div>
-                            <div class="label_product">
-                                <div class="label_wrapper">
-                                    -20% 
-                                </div>
-                            </div>
-                            <div class="product--action">
-                                <div class="group__prodcut--action">
-                                    <a href="#" class="product--action--links btn">
-                                        <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="container--items-content">
-                                <span class="product-vendor">NATURE REPUBLIC</span>
-                                <h3 class="product-name">
-                                    <a href="#" class="product-name-link">
-                                        Nature Republic Chuốt mi Botanical Mood Wear Curl Fix Mascara (màu 01 Black) 7g (IP04)
-                                    </a>
-                                </h3>
-                                <div class="product-price-box">
-                                    <div class="product-price">
-                                        <span class="price"><b>196,000₫</b></span>
-                                        <span class="compare-price">245,000₫</span>
-                                        <div class="compare-price--pseudo"></div>
-                                    </div>
-                                    <button class="add--cart" title="Thêm giở hàng">
-                                        <a href="#" class="add--cart--link">
-                                            <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container__content--primary--items contianer__content-primary--items-second">
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond6.jpg" alt="" class="container__product-img img-primary">
-                                </a>
-                            </div>
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond6-1.jpg" alt="" class="container__product-img img-secondary">
-                                </a>
-                            </div>
-                            <div class="label_product">
-                                <div class="label_wrapper">
-                                    -30% 
-                                </div>
-                            </div>
-                            <div class="product--action">
-                                <div class="group__prodcut--action">
-                                    <a href="#" class="product--action--links btn">
-                                        <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="container--items-content">
-                                <span class="product-vendor">BLACK ROUGE</span>
-                                <h3 class="product-name">
-                                    <a href="#" class="product-name-link">
-                                        Black Rouge Son Thỏi Wearable Velvet Lipstick
-                                    </a>
-                                </h3>
-                                <div class="product-price-box">
-                                    <div class="product-price">
-                                        <span class="price"><b>236,600₫</b></span>
-                                        <span class="compare-price">338,000₫</span>
-                                        <div class="compare-price--pseudo"></div>
-                                    </div>
-                                    <button class="add--cart" title="Thêm giở hàng">
-                                        <a href="#" class="add--cart--link">
-                                            <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container__content--primary--items contianer__content-primary--items-second">
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond7.jpg" alt="" class="container__product-img img-primary">
-                                </a>
-                            </div>
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond8-1.jpg" alt="" class="container__product-img img-secondary">
-                                </a>
-                            </div>
-                            <div class="label_product">
-                                <div class="label_wrapper">
-                                    -30% 
-                                </div>
-                            </div>
-                            <div class="product--action">
-                                <div class="group__prodcut--action">
-                                    <a href="#" class="product--action--links btn">
-                                        <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="container--items-content">
-                                <span class="product-vendor">LAPALETTE BEAUTY</span>
-                                <h3 class="product-name">
-                                    <a href="#" class="product-name-link">
-                                        Lapalette Beauty Tinh chất giàu VITAMIN C sáng da chống lão hóa Yellow Double C Serum 35ml (IP02)
-                                    </a>
-                                </h3>
-                                <div class="product-price-box">
-                                    <div class="product-price">
-                                        <span class="price"><b>489,300₫</b></span>
-                                        <span class="compare-price">699,000₫</span>
-                                        <div class="compare-price--pseudo"></div>
-                                    </div>
-                                    <button class="add--cart" title="Thêm giở hàng">
-                                        <a href="#" class="add--cart--link">
-                                            <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container__content--primary--items contianer__content-primary--items-second">
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond8.jpg" alt="" class="container__product-img img-primary">
-                                </a>
-                            </div>
-                            <div class="container--items--img">
-                                <a href="#">
-                                    <img src="./assets/img/itemssecond8-1.jpg" alt="" class="container__product-img img-secondary">
-                                </a>
-                            </div>
-                            <div class="label_product">
-                                <div class="label_wrapper">
-                                    -25% 
-                                </div>
-                            </div>
-                            <div class="product--action">
-                                <div class="group__prodcut--action">
-                                    <a href="#" class="product--action--links btn">
-                                        <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="container--items-content">
-                                <span class="product-vendor">FRESKA</span>
-                                <h3 class="product-name">
-                                    <a href="#" class="product-name-link">
-                                        Freska Nước tẩy trang Micellar Sensitive Cleansing Water 400ml (IP04)
-                                    </a>
-                                </h3>
-                                <div class="product-price-box">
-                                    <div class="product-price">
-                                        <span class="price"><b>141,000₫</b></span>
-                                        <span class="compare-price">188,000₫</span>
-                                        <div class="compare-price--pseudo"></div>
-                                    </div>
-                                    <button class="add--cart" title="Thêm giở hàng">
-                                        <a href="#" class="add--cart--link">
-                                            <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-view-box">
-                        <a href="" class="btn-view">Xem tất cả
-                            <ion-icon name="chevron-forward-outline" class="btn--right"></ion-icon>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/main.js"></script>
     <footer></footer>    
 </body>
 </html>
