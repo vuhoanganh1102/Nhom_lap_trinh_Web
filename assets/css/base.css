@@ -18,6 +18,10 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+#content{
+    position: relative;
+    top: 475px;
+}
 .grid {
     width: 1200px;
     max-width: 100%;

@@ -74,9 +74,12 @@ header .search{
     box-sizing: border-box;
 }
 header .search svg{
+    position: relative;
     color: #fff;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
+    top:1px;
+    right: 2px;
 }
 header .box{
     position: relative;
@@ -153,6 +156,7 @@ header .box .basket{
     width: 134px;
     height: 44px;
     border: #da677c solid 4px!important;
+    border-radius: 4px 4px 4px 4px;
 }
 header .box .basket img{
     position: relative;
