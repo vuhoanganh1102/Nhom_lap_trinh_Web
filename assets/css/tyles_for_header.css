@@ -237,8 +237,8 @@ header .nav2 .n2{
     width:11px; 
     height:13px;
 }
-header .nav2 a:hover,
-header .nav2 a:hover .n2{
+header .nav2 .none_menu_z1:hover,
+header .nav2 .none_menu_z1:hover .n2{
     color:black;
 }
 header .nav2 .none-menu .n1{
@@ -248,11 +248,18 @@ header .nav2 .none-menu .n1{
     cursor: pointer;
     color: #000;
 }
+header .nav2 .menu2 .td>a:hover,
 header .nav2 .menu1 .n1:hover{
     background-color:antiquewhite;
 }
 header .nav2 .none-menu .x:hover .y{
     display: inline-block;
+}
+header .nav2 .none-menu .makeup_img{
+    display: none;
+}
+header .nav2 .none-menu .x:hover .makeup_img{
+    display: block;
 }
 header .nav2 .menu1{
     position: absolute;
@@ -277,13 +284,33 @@ header .nav2 .menu1 .menu1_mua{
     top: 50px;
     text-align: center;
 }
-table, th, td{
-    border: 1px solid black;
+.makeup .z>a{
+    line-height: 40px;  
+    color: #000;
+    height: 40px;
+    display: inline-block;
 }
 header .nav2 table{
     position: absolute;
     width: 1400px;
-    height: 400px;
+    height: 414px;
     background-color: #fff;
-
+    box-sizing: border-box;
+    border: none;
+    border-collapse: collapse;
+    display:none;
+    right: 60px;
+}
+header .nav2 table td>a{
+    height: 40px;
+    color: #000;
+    float: left;
+}
+header .nav2 .table_z1>a{
+    padding-left: 50px;
+}
+header .nav2 .table_z3,
+header .nav2 .table_z4,
+header .nav2 .table_z2>a{
+    padding-left: 150px;
 }
