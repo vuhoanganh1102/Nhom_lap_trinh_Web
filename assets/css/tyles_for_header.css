@@ -277,22 +277,13 @@ header .nav2 .menu1 .menu1_mua{
     top: 50px;
     text-align: center;
 }
-header .makeup .menu2 table{
+table, th, td{
+    border: 1px solid black;
+}
+header .nav2 table{
     position: absolute;
     width: 1400px;
-    display: none;
-    background-color: aqua;
-    left:60px;
-    height: 300px;
-}
-header .makeup table .z{
-    padding-left: 200px;
-    
-}
-
-header .makeup table .table_z{
-    padding-left: 40px;
-    display: inline-block;
+    height: 400px;
     background-color: #fff;
-    height: 300px;
+
 }
