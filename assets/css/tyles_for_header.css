@@ -211,6 +211,7 @@ header .box li .n2:hover{
     color: #ffaeb4;
 }
 header .nav2{
+    position: relative;
     background-color: #e5677d;
     height: 49px;
     width: 100%;
@@ -240,20 +241,58 @@ header .nav2 a:hover,
 header .nav2 a:hover .n2{
     color:black;
 }
-/*header .nav2 .menu1{
-    display: block;
-    width: 210px;
-    height: 70px;
-    background-color:rebeccapurple;
-    padding-left: 32px;
+header .nav2 .none-menu .n1{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400px;
+    cursor: pointer;
+    color: #000;
 }
-header .nav2 .menu1>li{
-    padding-left: 0px;
+header .nav2 .menu1 .n1:hover{
+    background-color:antiquewhite;
 }
-header .nav2 .menu1>a{
-    position
+header .nav2 .none-menu .x:hover .y{
     display: inline-block;
-    width: 210px;
-    height: 30px;
-    background-color: rebeccapurple;
+}
+header .nav2 .menu1{
+    position: absolute;
+    display:none;
+    background-color:#fff;
+    width: 200px;
+    height: 99px;
+}
+header .nav2 .menu1 .menu1_hot{
+    position: absolute;
+    display: inline-block;
+    left:0;
+    top: 0;
+    padding: 0 10px;
+}
+header .nav2 .menu1 .menu1_mua{
+    position: absolute;
+    display: inline-block;
+    padding: 0 10px;
+    padding-right: 93.6px;
+    left:0px;
+    top: 50px;
+    text-align: center;
+}
+header .makeup .menu2 table{
+    position: absolute;
+    width: 1400px;
+    display: none;
+    background-color: aqua;
+    left:60px;
+    height: 300px;
+}
+header .makeup table .z{
+    padding-left: 200px;
+    
+}
+
+header .makeup table .table_z{
+    padding-left: 40px;
+    display: inline-block;
+    background-color: #fff;
+    height: 300px;
 }
