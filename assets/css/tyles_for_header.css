@@ -208,10 +208,12 @@ header .nav2{
     width: 100%;
 }
 header .nav2 li{
+    position: relative;
     float: left;
-    padding-left: 32px;
+    padding-left:1%;
     display: block;
     height: 49px;
+    left: 5%;
 }
 header .nav2 a{
     color: #fff;
@@ -246,33 +248,56 @@ header .nav2 .none-menu .x:hover .y{
     display: inline-block;
 }
 header .nav2 .none-menu .makeup_img{
+    position: absolute; 
     display: none;
+    left: 850%;
 }
-header .nav2 .none-menu .x:hover .makeup_img{
+header .nav2 .skincare .skincare_img{
+    position: absolute; 
+    display: none;
+    right: -800%;
+}
+header .nav2 .none-menu .x:hover .makeup_img,
+header .nav2 .none-menu .x:hover .skincare_img
+{
     display: block;
 }
 header .nav2 .menu1{
-    position: absolute;
+    position: relative;
     display:none;
+    /*background-color:#fff;
+    width: 200px;
+    height: 99px;*/
+}
+header .nav2 .menu1 .menu1_z1{
+    position: absolute;
     background-color:#fff;
     width: 200px;
-    height: 99px;
+    height: 60px;
+    top: 0;
 }
 header .nav2 .menu1 .menu1_hot{
-    position: absolute;
+    position:absolute;
     display: inline-block;
-    left:0;
-    top: 0;
-    padding: 0 10px;
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+    width: 200px;
+    height: 30px;
+    top: -49px;
+    left: -10px;
+
 }
 header .nav2 .menu1 .menu1_mua{
     position: absolute;
     display: inline-block;
-    padding: 0 10px;
-    padding-right: 93.6px;
-    left:0px;
-    top: 50px;
-    text-align: center;
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+    width: 200px;
+    height: 30px;
+    top:-20px;
+    right:-186px;
 }
 .skincare .z>a,
 .makeup .z>a{
@@ -281,17 +306,31 @@ header .nav2 .menu1 .menu1_mua{
     height: 40px;
     display: inline-block;
 }
-header .nav2 table{
-    position: absolute;
-    width: 1400px;
+header .nav2 .menu2 table{
+    position:absolute;
+    width: 1250px;
     height: 414px;
     background-color: #fff;
     box-sizing: border-box;
     border: none;
     border-collapse: collapse;
     display:none;
-    right: 60px;
+    left: -130%;
+
 }
+header .nav2 .menu3 table{
+    position:absolute;
+    width: 1250px;
+    height: 414px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: none;
+    border-collapse: collapse;
+    display:none;
+    left: -200%;
+
+}
+
 header .nav2 .menu2 table td>a{
     height: 40px;
     color: #000;
@@ -312,7 +351,7 @@ header .nav2 .menu3 table td>a{
     float: left;
     line-height: 35px;
 }
-@media  only screen and (min-width:769px) and (max-width:1024px) {
+@media  only screen and (min-width:1024px) and (max-width:1024px) {
     #banner{
         height: 50px;
     }
@@ -419,7 +458,7 @@ header .nav2 .menu3 table td>a{
         position: relative;
         height: 70px!important;
         width: 100%;
-        padding: 0 35px;
+        padding:0;
         box-sizing: border-box;
     }
     header .nav2 .x{
@@ -436,7 +475,6 @@ header .nav2 .menu3 table td>a{
     header .nav2 .menu1{
         position: relative;
         top:-10px;
-        
         height: 60px;
         left: -8px;
     }
@@ -448,7 +486,11 @@ header .nav2 .menu3 table td>a{
     }
     header .nav2 .menu1_mua{
         position:relative;
-        top: 30px!important;
+        top: -40px!important;
+    }
+    header .nav2 .menu1_hot{
+        position:relative;
+        top: -70px!important;
     }
     header .nav2 .menu2{
         position: relative;
@@ -482,10 +524,10 @@ header .nav2 .menu3 table td>a{
     header .nav2 .menu3{
         position: relative;
         top: 20px;
-        right: 90px;
+        right:80%;
     }
     header .nav2 .skincare table{
-        position: relative;
+        position: absolute;
         width: 880px;
         height: 400px;
         padding-top: 10px;
@@ -502,9 +544,14 @@ header .nav2 .menu3 table td>a{
     header .nav2 .skincare table .table_z2{
         padding-left: 20px;
     }
+    header .nav2 .skincare .skincare_img{
+        top: 0;
+        right:0;
+        left: 500px;
+    }
     #slider{
         height: 330px;
-        top:20px;
+        right:0px;
     }
     #slider .banner__container{
         width: 100%;
