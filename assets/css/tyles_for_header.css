@@ -12,20 +12,13 @@
 
 #banner{
     position: relative;
-    background-color: #ffaeb4;
     width: 100%;
     height: 70px;
 }
-#banner .top_banner{
+#banner img{
     position: absolute;
-    background: url("/assets/img/top_banner.png");
-    left: 2%;
-    right: 2%;
-    height: 100%;
-    width: 96%;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
+    max-width: 100%;
+    height:auto;
 }
 header{
     
@@ -48,7 +41,6 @@ header .nav1{
 header .nav1 .img{
     position: relative;
     background-color: #fff;
-    display: block;
     text-align: center;
     height: 83px;
     width: 360px;
@@ -155,7 +147,7 @@ header .box .basket{
     display: block;
     width: 134px;
     height: 44px;
-    border: #da677c solid 4px!important;
+    border: #da677c solid 4px;
     border-radius: 4px 4px 4px 4px;
 }
 header .box .basket img{
@@ -177,8 +169,7 @@ header .box .bill a{
     left: 46px;
     bottom: 36px;
 }
-header .box .bill a
-{   
+header .box .bill a{   
     display: block;
     margin-top:5px ;
 }
@@ -320,4 +311,150 @@ header .nav2 .menu3 table td>a{
     color: #000;
     float: left;
     line-height: 35px;
+}
+@media  only screen and (min-width:769px) and (max-width:1024px) {
+    #banner{
+        height: 50px;
+    }
+    header .nav1{
+        position: relative;
+        height: 100px;
+        width: 100%;
+        padding: 0 0;
+    }
+    header .nav1 .img img{
+        width: 100%;
+        object-fit: contain;
+    }
+    header .nav1 .search{
+        position: relative;
+        left: 40px;
+        padding-right: 60px;
+    }
+    header .nav1 .box{
+        position: relative;
+    }
+    header .nav1 .box .n1{
+        width:20%;
+    }
+    header .nav1 .box .sup{
+        position: relative;
+    }
+    header .nav1 .box .sup p{
+        position: absolute;
+        width: 50px;
+        top: -10px;
+        left: 40px;
+    }
+    header .nav1 .box .sup img{
+        position: absolute;
+        top: 6px;
+    }
+    header .nav1 .box .sup .n2{
+        position: absolute;
+        bottom:-24px;
+        left: 20px;
+    }
+    header .nav1 .box .acc{
+        position: relative;
+        width: 30px;
+        padding-right:50px;
+    }
+    header .nav1 .box .acc .acc1{
+        position: absolute;
+        width: 50px;
+        top:-8px;
+        left: 30px;
+    }
+    header .nav1 .box .acc img{
+        position: absolute;
+        left: 0;
+        top: 6px;
+    }
+    header .nav1 .box .acc .login{
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+    header .nav1 .box .basket{
+        position: relative;
+        width: 40px;
+        border: solid #da677c;
+        left:-10px;
+    }
+    header .nav1 .box .basket img{
+        position: absolute;
+        top: 6px;
+        left:0px;
+    }
+    header .nav1 .box .basket .basket1{
+       display: none;
+    }
+    header .nav1 .box .bill{
+        position: relative;
+        left: -10px;
+        width: 40px;
+        padding-left: 10px;
+    }
+    header .nav1 .box .bill a{
+        position: absolute;
+        left: 40px;
+        top:-12px
+    }
+    header .nav1 .box .System{
+        position: relative;
+        width: 30px;
+        left:70px;
+    }
+    header .nav1 .box .System img{
+        position: absolute;
+        
+    }
+    header .nav1 .box .System a{
+        position: absolute;
+        left:-6px;
+        top:-6px
+    }
+    header .nav2{
+        position: relative;
+        height: 70px!important;
+        width: 100%;
+        padding: 0 35px;
+        box-sizing: border-box;
+    }
+    header .nav2 .x{
+        height: 70px!important;
+        width:80px;
+        padding: 10px 10px;
+        margin: 0 2px;
+        box-sizing: border-box;
+    }
+    header .nav2 .none_menu_z2{
+        line-height: 20px;
+        height: 70px;
+    }
+    header .nav2 .menu1{
+        top: 70px;
+        aspect-ratio: auto 200/99;
+        height: 60px;
+
+    }
+    header .nav2 .menu1_hot,
+    header .nav2 .menu1_mua
+    {
+        height: 30px;
+        line-height: 30px;
+    }
+    header .nav2 .menu1_mua{
+        top:-100px;
+    }
+    #slider{
+        height: 330px;
+        top:20px;
+    }
+    #slider .banner__container{
+        width: 100%;
+        height: 100%;
+    }
+
 }
