@@ -380,3 +380,178 @@
 .container__second--list-product {
     margin-top: 0;
 }
+@media only screen and (max-width: 739px) {
+    .container {
+        padding: 10px;
+    }
+    .container__header--boxtime{
+        width: 100%;
+        display: block;
+    }
+    .container__header--boxtime--title{
+        text-align: center;
+    }
+    .container__boxtime--title-link{
+        font-size: 20px;
+        display: block;
+        padding: 10px 0;
+    }
+    .container__boxtime--title--paragraph{
+        font-size: 15px;
+        display: block;
+        padding: 10px 0;
+    }
+    .container__header {
+        display: block;
+    }
+    .container__header--boxtime {
+        display: block;
+    }
+    .container__header__boxtime-time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px 0;
+    }
+    .container__box--promotion {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .container__content--primary {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+        scroll-snap-stop: always;
+        scroll-snap-align: center;
+        scroll-behavior: smooth;
+    }
+    .container__content--primary--items {
+        min-width: 80%;
+        padding: 0;
+        margin-right: 12px;
+    }
+    .container__box--best-seller {
+        display: none;
+    }
+    .respones-left {
+        text-align: left;
+    }
+    .container__second {
+        padding: 10px;
+    }
+    .container__second--best-seller{
+        max-width: 100%;
+    }
+    .container__second--content {
+        display: block;
+    }
+    .container__second--best-product {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+        scroll-snap-stop: always;
+        scroll-snap-align: center;
+        margin-bottom: 20px;
+        scroll-behavior: smooth;
+    }
+    .btn-small {
+        display: block;
+        white-space: nowrap;
+    }
+    .container__second--product-box{
+        width: 100%;
+        margin: 0;
+    }
+    .container__second--list-product {
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .contianer__content-primary--items-second {
+        min-width: calc(50% - 6px);
+        margin: 0;
+    }
+    .product-vendor,
+    .product-name-link,
+    .price,.compare-price {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .container {
+        padding: 10px;
+    }
+    .container__header--boxtime{
+        width: 100%;
+        display: block;
+    }
+    .container__header {
+        display: block;
+    }
+    .container__header--boxtime {
+        display: flex;
+    }
+    .container__content--primary {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+        scroll-snap-stop: always;
+        scroll-snap-align: center;
+        scroll-behavior: smooth;
+    }
+    .container__content--primary--items {
+        min-width: 30%;
+        padding: 0;
+        margin-right: 12px;
+    }
+    .container__box--best-seller {
+        display: none;
+    }
+    .respones-left {
+        text-align: left;
+    }
+    .container__second {
+        padding: 10px;
+    }
+    .container__second--best-seller{
+        max-width: 100%;
+    }
+    .container__second--content {
+        display: block;
+    }
+    .container__second--best-product {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+        scroll-snap-stop: always;
+        scroll-snap-align: center;
+        margin-bottom: 20px;
+        scroll-behavior: smooth;
+    }
+    .btn-small {
+        display: block;
+        white-space: nowrap;
+    }
+    .container__second--product-box{
+        width: 100%;
+        margin: 0;
+    }
+    .container__second--list-product {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .contianer__content-primary--items-second {
+        min-width: calc(25% - 6px);
+        margin: 0;
+        margin: 20px 0;
+    }
+}
