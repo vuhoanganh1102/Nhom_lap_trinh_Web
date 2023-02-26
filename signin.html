@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-content">
+            <form action="" class="login__form">
+                <div class="login__heading">
+                    <h1 class="login__title">Đăng nhập tài khoản</h1>
+                    <p class="login__description">
+                        Bạn chưa có tài khoản ?
+                        <a href="" class="btn__register">Đăng ký tại đây.</a>
+                    </p>
+                </div>
+
+                <div>
+                    <div class="login__inputs">
+                        <div>
+                            <label for="input__email" class="login__label">Email
+                                <span class="input__required">*</span>
+                            </label>
+                            <input type="email" placeholder="Email" required id="input__email" class="login__input">
+                        </div>
+                        <div>
+                            <label for="input_password" class="login__label">Mật khẩu
+                                <span class="input__required">*</span>
+                            </label>
+                            <input type="password" placeholder="Mật khẩu" required id="input_password" class="login__input">
+                        </div>
+                    </div>
+
+                    <div class="login__forget">
+                        <p>Quên mật khẩu? Nhấn vào
+                            <a href="">đây</a>
+                        </p>
+                    </div>     
+                </div>
+
+                <div>
+                    <button class="login__button">Đăng nhập</button>
+                </div>
+                <div>
+                    <p class="login__another">Hoặc đăng nhập bằng</p>
+                   
+                </div>
+               
+                <div>
+                    <div class="login__button-another">
+                        <button class="login__google"> 
+                            <i class="fa-brands fa-google-plus-g"></i> 
+                            <span>Đăng nhập Google</span>   
+                        </button>
+                        <button class="login__facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span>Đăng nhập Facebook</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
