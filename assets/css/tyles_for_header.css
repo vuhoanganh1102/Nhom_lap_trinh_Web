@@ -434,10 +434,11 @@ header .nav2 .menu3 table td>a{
         height: 70px;
     }
     header .nav2 .menu1{
-        top: 70px;
-        aspect-ratio: auto 200/99;
+        position: relative;
+        top:-10px;
+        
         height: 60px;
-
+        left: -8px;
     }
     header .nav2 .menu1_hot,
     header .nav2 .menu1_mua
@@ -446,7 +447,60 @@ header .nav2 .menu3 table td>a{
         line-height: 30px;
     }
     header .nav2 .menu1_mua{
-        top:-100px;
+        position:relative;
+        top: 30px!important;
+    }
+    header .nav2 .menu2{
+        position: relative;
+        top: 20px;
+        right:8px ;
+    }
+    header .nav2 .makeup table{
+        position: relative;
+        width: 880px;
+        height: 400px;
+        padding-top: 10px;
+    }
+    header .nav2 .makeup table .table_z2>a,
+    header .nav2 .makeup table .table_z3>a,
+    header .nav2 .makeup table .table_z4>a,
+    header .nav2 .makeup table .table_z1>a{
+        font-size: 14px;
+        line-height: 5px;
+        
+    }
+    header .nav2 .makeup table .table_z3,
+    header .nav2 .makeup table .table_z4,
+    header .nav2 .makeup table .table_z2{
+        padding-left: 20px;
+    }
+    header .nav2 .makeup .makeup_img{
+        position: absolute;
+        top: 0;
+        left: 500px;
+    }
+    header .nav2 .menu3{
+        position: relative;
+        top: 20px;
+        right: 90px;
+    }
+    header .nav2 .skincare table{
+        position: relative;
+        width: 880px;
+        height: 400px;
+        padding-top: 10px;
+    }
+    header .nav2 .skincare table .table_z2>a,
+    header .nav2 .skincare table .table_z3>a,
+    header .nav2 .skincare table .table_z4>a,
+    header .nav2 .skincare table .table_z1>a{
+        font-size: 14px;
+        line-height: 5px;
+    }
+    header .nav2 .skincare table .table_z3,
+    header .nav2 .skincare table .table_z4,
+    header .nav2 .skincare table .table_z2{
+        padding-left: 20px;
     }
     #slider{
         height: 330px;
