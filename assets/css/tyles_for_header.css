@@ -26,7 +26,7 @@ header{
 header .nav{
     background-color:#fff;
     width: 100%;
-    height: 152px;
+    height: 22%;
 }
 
 header .nav1{
@@ -34,8 +34,8 @@ header .nav1{
     background-color: #fff;
     display: flex;
     width: 100%;
-    height: 103px;
-    padding: 10px 29px;
+    height:70%;
+    padding: 0.1% 0.29%;
 } 
 
 header .nav1 .img{
@@ -43,49 +43,76 @@ header .nav1 .img{
     background-color: #fff;
     text-align: center;
     height: 83px;
-    width: 360px;
+    width:20%;
 }
 header .img img{
     position: absolute;
     cursor: pointer;
-    left: 15px;
-    height: 83px;
-    width: 248px;
-    background-size: contain;
+    width: 70%;
+    right: 50%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
 header .search{
     position: relative;
     display:flex;
     background-color:#fff;
     height: 36px;
-    width: 360px;
+    width:30%;
     left: 0;
     top: 24px;
     text-align: center;
     line-height: 36px;
     box-sizing: border-box;
+    float: right;
 }
-header .search svg{
-    position: relative;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    top:1px;
-    right: 2px;
+header .search>form{
+    position: absolute;
+    width: 100%;
+    height:36px;
+}
+header .search input[type=text]{
+    position: absolute;
+    text-align: center;
+    border:1px solid grey;
+    border-radius:20px 0 0 20px;
+    width: 80%;
+    height: 100%;
+    right: 20%; 
+}
+header .search .input-group button{
+    position: absolute;
+    background-color:#d82e4d;
+    width:10%;
+    height:100%;
+    right:10%;
+    top:0;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+header .search .input-group svg{
+    color:#fff;
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    right:25%;
+    bottom: 25%;
 }
 header .box{
-    position: relative;
+    position:absolute;
     display: block;
     height: 44px;
-    width: 720px;
-    left: 0;
-    top: 19px;
+    width: 50%;
+    left: 50%;
+    top: 25px;
     text-align: center;
 }
 header .box li{
     float: left;
     display: block;
     height: 44px;
+    padding-right:5px;
 }
 header .box>ul a{
     color: #000;
@@ -118,8 +145,10 @@ header .box .sup >a{
     right: 47px;
 }
 header .box .acc{
+    left:10%;
     padding-left: 48px;
     padding-right:15px ;
+
 }
 header .box .acc>.acc1
 {   
@@ -351,7 +380,7 @@ header .nav2 .menu3 table td>a{
     float: left;
     line-height: 35px;
 }
-@media  only screen and (min-width:1024px) and (max-width:1024px) {
+@media  only screen and (min-width:1024px) and (max-width:1366px) {
     #banner{
         height: 50px;
     }
@@ -361,20 +390,18 @@ header .nav2 .menu3 table td>a{
         width: 100%;
         padding: 0 0;
     }
-    header .nav1 .img img{
-        width: 100%;
-        object-fit: contain;
-    }
-    header .nav1 .search{
-        position: relative;
-        left: 40px;
-        padding-right: 60px;
-    }
     header .nav1 .box{
         position: relative;
+        width: 50%;
+        height: 100px;
+        left: 0;
+        top: 0;
     }
     header .nav1 .box .n1{
+        position: absolute;
         width:20%;
+        height: 100px;
+        padding: 0;
     }
     header .nav1 .box .sup{
         position: relative;
@@ -382,73 +409,68 @@ header .nav2 .menu3 table td>a{
     header .nav1 .box .sup p{
         position: absolute;
         width: 50px;
-        top: -10px;
-        left: 40px;
+        right: 0;
+        top: 20%;
     }
     header .nav1 .box .sup img{
         position: absolute;
-        top: 6px;
+        top:25%;
+        left:10%;
     }
     header .nav1 .box .sup .n2{
         position: absolute;
-        bottom:-24px;
-        left: 20px;
+        width: 60%;
+        height: 20px;
+        line-height: 20px;
+        bottom:0;
+        top:60%;
     }
     header .nav1 .box .acc{
         position: relative;
-        width: 30px;
-        padding-right:50px;
+        left: 0;
     }
     header .nav1 .box .acc .acc1{
         position: absolute;
         width: 50px;
-        top:-8px;
-        left: 30px;
+        top:20%;
     }
     header .nav1 .box .acc img{
         position: absolute;
-        left: 0;
-        top: 6px;
+        left:20%;
+        top:25%;
     }
     header .nav1 .box .acc .login{
         position: absolute;
         left: 0;
-        bottom: -10px;
+        top: 60%;
     }
     header .nav1 .box .basket{
         position: relative;
-        width: 40px;
-        border: solid #da677c;
-        left:-10px;
     }
     header .nav1 .box .basket img{
         position: absolute;
-        top: 6px;
+        top:25%;
         left:0px;
+        border: solid #da677c;4
     }
     header .nav1 .box .basket .basket1{
        display: none;
     }
     header .nav1 .box .bill{
         position: relative;
-        left: -10px;
-        width: 40px;
-        padding-left: 10px;
     }
     header .nav1 .box .bill a{
         position: absolute;
-        left: 40px;
-        top:-12px
+        
     }
     header .nav1 .box .System{
         position: relative;
-        width: 30px;
-        left:70px;
+       
     }
     header .nav1 .box .System img{
         position: absolute;
         
-    }
+    }*/
     header .nav1 .box .System a{
         position: absolute;
         left:-6px;
@@ -556,6 +578,7 @@ header .nav2 .menu3 table td>a{
     #slider .banner__container{
         width: 100%;
         height: 100%;
-    }
+    }*/
 
 }
+@media only screen and 
