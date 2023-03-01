@@ -1,10 +1,5 @@
 :root {
     --text-color: #000000;
-    --h5-font-size: 12.8px;
-    --h4-font-size: 14px;
-    --h3-font-size: 16px;
-    --h1-font-size: 25px;
-    --font-semi-weight: 0.85;
     --body-font: 'Roboto', sans-serif;
 }
 
@@ -52,7 +47,7 @@ body {
 
 .login__description {
     color: var(--text-color);
-    font-size: var(--h3-font-size);
+    font-size: 16px;
     text-align: center;
     margin: 0px;
 }
@@ -71,7 +66,7 @@ body {
 .login__label {
     display: block;
     color: var(--text-color);
-    font-size: var(--h4-font-size);
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -104,7 +99,7 @@ body {
 
 .login__forget p {
     margin: 8px 0;
-    font-size: var(--h5-font-size);
+    font-size: 12.8px;
 }
 
 .login__forget p a {
@@ -113,7 +108,7 @@ body {
 }
 
 .login__button {
-    font-size: var(--h3-font-size);
+    font-size: 16px;
     background-color: #d82e4d;
     color: #ffffff;
     font-weight: 400;
@@ -136,7 +131,7 @@ body {
 .login__another {
     margin-top: 36px;
     text-align: center;
-    font-size: var(--h3-font-size);
+    font-size: 16px;
     color: #6c757d;
 }
 
