@@ -380,7 +380,7 @@ header .nav2 .menu3 table td>a{
     float: left;
     line-height: 35px;
 }
-@media  only screen and (min-width:1024px) and (max-width:1366px) {
+@media  only screen and (min-width:900px) and (max-width:1400px) {
     #banner{
         height: 50px;
     }
@@ -446,35 +446,62 @@ header .nav2 .menu3 table td>a{
     }
     header .nav1 .box .basket{
         position: relative;
+        border: none;
     }
     header .nav1 .box .basket img{
         position: absolute;
         top:25%;
-        left:0px;
-        border: solid #da677c;4
+        left:50%;
+        transform: translateX(-50%);
+        border:solid #da677c;
+        border-radius: 2px 2px 2px 2px;
+
     }
-    header .nav1 .box .basket .basket1{
-       display: none;
+    header .nav1 .box .basket .n2{
+       position: absolute;
+       display: inline-block;
+       left: 50%;
+       width: 50%;
+       transform: translateX(-50%);
+       top:60%;
     }
     header .nav1 .box .bill{
         position: relative;
+        left: 0;
     }
-    header .nav1 .box .bill a{
+    header .nav1 .box .bill img{
+        position:absolute;
+        left:0;
+        top:25%;
+    }
+    header .nav1 .box .bill .n2{
         position: absolute;
-        
+        display:inline-block;
+        width: 50%;
+        height: 10%;
+        top: 25%;
+        left: 32%;
+        margin: 0;
     }
     header .nav1 .box .System{
         position: relative;
-       
+        left: 0;
     }
     header .nav1 .box .System img{
         position: absolute;
-        
-    }*/
-    header .nav1 .box .System a{
+        left: 0;
+        bottom: 0;
+        top: 25%;
+        right: 50%;
+    }
+    header .nav1 .box .System .n2{
         position: absolute;
-        left:-6px;
-        top:-6px
+        display: inline-block;
+        width: 50%;
+        height: 10%;
+        line-height: 14px;
+        left: 32%;
+        top: 25%;
     }
     header .nav2{
         position: relative;
@@ -483,9 +510,10 @@ header .nav2 .menu3 table td>a{
         padding:0;
         box-sizing: border-box;
     }
+
     header .nav2 .x{
         height: 70px!important;
-        width:80px;
+        width:8%;
         padding: 10px 10px;
         margin: 0 2px;
         box-sizing: border-box;
@@ -571,14 +599,20 @@ header .nav2 .menu3 table td>a{
         right:0;
         left: 500px;
     }
-    #slider{
-        height: 330px;
-        right:0px;
-    }
     #slider .banner__container{
         width: 100%;
         height: 100%;
-    }*/
+    }
 
 }
-@media only screen and 
+@media only screen and (min-width:375px) and (max-width:899px){
+    header .nav{
+        position: relative;
+        display: block;
+        background-color:#000 ;
+        top: 0;
+        bottom: 0;
+        width: 70%;
+        height: 100%;
+    }
+}
