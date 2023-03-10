@@ -33,326 +33,144 @@
     <!-- Header -->
     <div id="banner">
         <div class="top_banner">
-            <img src="./assets/img/top_banner.png" alt="">
+            <img src="./assets/img/top_banner.png" style="width: 100%;"alt="">
         </div>
     </div>
     <header>
         <div class="nav">
             <div class="nav1">
-                <div class="img">
-                    <a href=""><img src="./assets/img/logo.png" alt=""></a>
-                </div>
-                <div class="search">
-                    <form action="/search" method="get" role="search">
-                        <input type="text" placeholder="Search...">
+                    <div class="img nav1_n0">
+                        <a href=""><img src="./assets/img/logo.png" alt=""></a>
+                    </div>
+                    <div class="search nav1_n0">
+                       <form action="/search" method="get" role="search"></form>
                         <span class="input-group">
-                            <button type="submit">
+                            <input type="text" placeholder="Search...">
+                            <input type="hidden" name="type" value="product">
+                            <button type="submit" aria-label="search">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Search</title><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
-                            </button> 
+                            </button>
                         </span>
-                            
-                    </form>
-                    <!--<span class="input-group">
-                        <button type="submit"
-                            style="background-color; cursor: pointer;width: 57px;height: 36px;border-radius: 0 20px 20px 0;"
-                            aria-label="search">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Search</title>
-                                <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
-                                    fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
-                                    stroke-width="32" d="M338.29 338.29L448 448" />
-                            </svg>
-                        </button>
-                    </span>-->
-                </div>
-                <div class="box">
-                    <ul>
-                        <li class="sup n1">
-                            <p>Hỗ trợ khách hàng</p>
-                            <img src="./assets/img/phone-icon.webp" alt="">
-                            <a class="n2" href="#">19002613</a>
-
-                        </li>
-                        <li class="acc n1">
-                            <a class="acc1 n2" href="#">Tài khoản</a>
-                            <img src="./assets/img/account-icon.webp" alt="">
-                            <a class="login n2" href="#">Đăng nhập</a>
-                        </li>
-                        <li class="basket n1">
-                            <a href=""><img src="./assets/img/cart-icon.webp" alt=""></a>
-                            <a class="basket1 n2" href="#">Giỏ hàng</a>
-
-                        </li>
-                        <li class="bill n1">
-                            <img src="./assets/img/policy_header_image_3.webp" alt="">
-                            <a class="n2" href="#">
-                                Kiểm tra</br>đơn hàng
-                            </a>
-
-                        </li>
-                        <li class="System n1">
-                            <img src="./assets/img/policy_header_image_4.webp" alt="">
-                            <a class="n2" href="#">Hệ thống</br>của hàng</a>
-                        </li>
-                    </ul>
+                    </div>
+                    <div class="box nav1_n0">
+                        <ul class="menu">
+                            <li class="sup n1">
+                                <img  class="sup_img"src="./assets/img/phone-icon.webp" alt="">
+                                <div class="sup_div">
+                                    <p >Hỗ trợ khách hàng</p>
+                                    <a class="n2" href="#">19002613</a>
+                                </div>
+                            </li>
+                            <li class="acc n1">
+                                <img class="acc_img" src="./assets/img/account-icon.webp" alt="">
+                                <div class="acc_div">
+                                    <a class="acc1 n2"href="#">Tài khoản</a>
+                                    <a class="login n2"href="#">Đăng nhập</a>
+                                </div>
+                            </li>
+                            <li class="basket n1">
+                                    <a class="basket0" href=""><img src="./assets/img/cart-icon.webp" alt=""></a>
+                                    <a class="basket1 n2"href="#">Giỏ hàng</a>
+                                    <a class="basket2"href=""></a>
+                            </li>
+                            <li class="bill n1">
+                                <img src="./assets/img/policy_header_image_3.webp" alt="">
+                                <a class="n2" href="#">
+                                    Kiểm tra đơn hàng
+                                </a>
+                            </li>
+                            <li class="System n1">
+                                <img src="./assets/img/policy_header_image_4.webp" alt="">
+                                <a class="n2" href="#">Hệ thống của hàng</a>
+                            </li>
+                            <li class="flexible">
+                                <div class="nav2">
+                                    <ul class="none-menu">
+                                        <li class="hot">
+                                            <a href="#">
+                                                ƯU ĐÃI HOT
+                                               <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                                <ul class="hot_1">
+                                                    <li class="hot_2"><a href="#">ƯU ĐÃI HOT, ĐỪNG BỎ LỠ</a></li>
+                                                    <li class="hot_3"><a href="#">MUA 1 TẶNG 1</a></li>
+                                                </ul>
+                                            </a>
+                                        </li>
+                                        <li class="makeup">
+                                            <a href="#">
+                                                Trang điểm
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                                <ul>
+                                                    
+                                                </ul>
+                                            </a>
+                                        </li>
+                                        <li class="skincare">
+                                            <a href="#">
+                                                Chăm sóc da
+                                               <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="bodycare">
+                                            <a href="#">
+                                                Chăm sóc cơ thể
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="haircare">
+                                            <a href="#">
+                                                Chăm sóc tóc
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="health">
+                                            <a href="#">
+                                                Chăm sóc sức khỏe
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="tool">
+                                            <a href="#">
+                                                Tools & Brushes
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="items">
+                                            <a href="#">
+                                                Phụ kiện
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="men">
+                                            <a href="#">
+                                                Dành cho Nam
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="news">
+                                            <a href="#">
+                                                Tin tức
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="band">
+                                            <a href="#">
+                                                Tất cả thương hiệu
+                                                <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="togle">
+                        <span></span>
+                    </div>
+                    <div class="basket_mobile">
+                    </div>
                 </div>
             </div>
-            <div class="nav2">
-                <ul class="none-menu">
-                    <li class="hot x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            ƯU ĐÃI HOT
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                            <div class="menu1 y">
-                                <ul class="menu1_z1">
-                                    <li><a class="menu1_hot n1" href="#">ƯU ĐÃI HOT, ĐỪNG BỎ LỠ</a></li>
-                                    <li><a class="menu1_mua n1" href="#">MUA 1 TẶNG 1</a></li>
-                                </ul>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="makeup x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Trang điểm
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                            <div class="menu2">
-                                <table class="y">
-                                    <tr>
-                                        <th class="z table_z1"><a href="#">Trang điểm mặt</a></th>
-                                        <th class="z table_z2"><a href="#">Trang điểm môi</a></th>
-                                        <th class="z table_z3"><a href="#">Trang điểm mắt</a></th>
-                                        <th class="z table_z4"><a href="#">Dụng cụ trang điểm</a></th>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#"> Kem lót</a></td>
-                                        <td class="table_z2"><a href="#"> Son kem</a></td>
-                                        <td class="table_z3"><a href="#"> Chì kẻ mày</a></td>
-                                        <td class="table_z4"><a href="#"> Bông tẩy trang</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#"> Kem nền</a></td>
-                                        <td class="table_z2"><a href="#"> Son thỏi</a></td>
-                                        <td class="table_z3"><a href="#"> Phấn mắt</a></td>
-                                        <td class="table_z4"><a href="#"> Bấm mi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#"> Phấn nước</a></td>
-                                        <td class="table_z2"><a href="#"> Chì kẻ </a></td>
-                                        <td class="table_z3"><a href="#"> Nhũ mắt</a></td>
-                                        <td class="table_z4"><a href="#"> Lông mi giả</a></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#">BB/CC cream</a></td>
-                                        <td class="table_z2"><a href="#">Son dưỡng</a></td>
-                                        <td class="table_z3"><a href="#">Kẻ mắt</a></td>
-                                        <td class="table_z4"><a href="#">Cọ trang điểm</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#"> Che khuyết điểm</a></td>
-                                        <td class="table_z2"><a href="#"> Son lót</a></td>
-                                        <td class="table_z3"><a href="#"> Chuốt mi</a></td>
-                                        <td class="table_z4"><a href="#"> Mút trang điểm</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#"> Tạo khối/sáng</a></td>
-                                        <td class="table_z2"><a href=""></a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href="#"> Dụng cụ rửa cọ</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#"> Phấn má</a></td>
-                                        <td class="table_z2"><a href=""></a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#"> Phấn nền/phủ</a></td>
-                                        <td class="table_z2"><a href=""></a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="#"> Xịt khóa Makeup</a></td>
-                                        <td class="table_z2"><a href=""></a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                </table>
-                                <img class="makeup_img" src="./assets/img/banner_mega_2.webp"
-                                    style="position:absolute;right:100px;" 
-                                    alt="">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="skincare x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Chăm sóc da
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                            <div class="menu3">
-                                <table class="y">
-                                    <tr>
-                                        <th class="z table_z1"><a href="">Làm sạch da</a></th>
-                                        <th class="z table_z2"><a href="">Chăm sóc da</a></th>
-                                        <th class="z table_z3"><a href="">Mặt nạ</a></th>
-                                        <th class="z table_z4"><a href="">Kem chống nắng</a></th>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Sữa rửa mặt</a></td>
-                                        <td class="table_z2"><a href="">Nước hoa hồng</a></td>
-                                        <td class="table_z3"><a href="">Mặt nạ giấy</a></td>
-                                        <td class="table_z4"><a href="">Kem chống nắng mặt</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Bông tẩy trang</a></td>
-                                        <td class="table_z2"><a href="">Tinh chất</a></td>
-                                        <td class="table_z3"><a href="">Mặt nạ ngủ</a></td>
-                                        <td class="table_z4"><a href="">kem chống nắng toàn thân</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Dầu tẩy trang</a></td>
-                                        <td class="table_z2"><a href="">Sữa dưỡng</a></td>
-                                        <td class="table_z3"><a href="">Mặt nạ rửa</a></td>
-                                        <td class="table_z4"><a href="">Xịt chống nắng</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Nước tẩy trang</a></td>
-                                        <td class="table_z2"><a href="">Sữa dưỡng</a></td>
-                                        <td class="table_z3"><a href="">Mặt nạ môi</a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Sáp tẩy trang</a></td>
-                                        <td class="table_z2"><a href="">Kem dưỡng mắt</a></td>
-                                        <td class="table_z3"><a href="">Mặt nạ mắt</a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Khăn tẩy trang</a></td>
-                                        <td class="table_z2"><a href="">Kem trị mụn</a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Tẩy da chết môi</a></td>
-                                        <td class="table_z2"><a href="">Xịt khoáng</a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Tẩy da chết mặt</a></td>
-                                        <td class="table_z2"><a href="">Dầu dừa</a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Miếng dán mụn</a></td>
-                                        <td class="table_z2"><a href="">Dầu dưỡng</a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_z1"><a href="">Miếng lột mụn</a></td>
-                                        <td class="table_z2"><a href="">Bộ dưỡng da</a></td>
-                                        <td class="table_z3"><a href=""></a></td>
-                                        <td class="table_z4"><a href=""></a></td>
-                                    </tr>
-                                </table>
-                                <img class="skincare_img"src="./assets/img/banner_mega_1.webp" alt="">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bodycare x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Chăm sóc cơ thể
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="haircare x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Chăm sóc tóc
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="health x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Chăm sóc sức khỏe
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="tool x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Tools & Brushes
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="items x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Phụ kiện
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="men x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Dành cho Nam
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="news x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Tin tức
-                            <svg class="n2" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Chevron Down</title>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="48" d="M112 184l144 144 144-144" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="brand x">
-                        <a class="none_menu_z1 none_menu_z2" href="#">
-                            Tất cả thương hiệu
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </header>
     <div id="slider">
         <div class="banner__container">

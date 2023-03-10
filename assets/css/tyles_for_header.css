@@ -1,618 +1,494 @@
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-size: 16px;
     font-family: sans-serif;
-    border: none;
-    list-style-type: none;
     box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    background-color:#fff;
+    width:100%;
+    flex-wrap: wrap;
+    margin: 0 0 3% 0;
+}
+.nav .nav1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color:#fff;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.nav .nav1 .img{
+    width: 14%;
+    margin: 10px 0 10px 44px;
+}
+.nav .nav1 .img img{
+    display: block;
+    width: 100%;
+}
+.nav .nav1 .search{
+    width: 30%;
+    margin:10px 0px 10px 0px;
+}
+.nav .nav1 .input-group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.nav .nav1 input[type=text]{
+    width: 70%;
+    height:36px;
+    margin: 17px 0px 17px 30px;
+    border-radius: 20px 0px 0 20px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    background-color:#f1f1f1;
+}
+.nav .nav1 .search button{
+    width:57px;
+    height: 36px;
+    margin: 17px 0;
+    background-color: #d82e4d;
+    border: none;
+    border-radius: 0 20px 20px 0px;
+}
+.nav .nav1 .search button svg{
+    font-weight:400px ;
+    width:25px;
+    height: 25px;
+    color: #fff;
+    margin: 5px;
+}
+.nav .nav1 .box{
+    background-color:#fff;
+    width: 50%;
+    margin: 10px 0px 10px 0px; 
+}
+.nav .box .menu{
+    display: flex;
+   flex-wrap: wrap;
+   text-decoration: row;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+}
+.nav .box .menu li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav .box .menu li a{
+    text-decoration: none;
+    color: #000;
+}
+.nav .nav1 .menu .sup{
+    width: 25%;
+}
+.nav .box .menu img{
+    width: 32px;
+    height: 32px;
+}
+.nav .nav1 .menu .sup_img{
+    margin: 17px 0 17px 0;
+}
+.nav .box .sup .sup_div{
+    width: 70%;
+    margin: 17px 0;
+}
+.nav .box .sup p{
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.nav .box .sup a{
+    font-size: 14px;
+    display: inline-block;
+    width: 70%;
+    height:14px;
+    font-weight: 700;
+}
+.nav .nav1 .menu .acc{
+    width: 16%;
+}
+.nav .nav1 .menu .acc_img{
+    width: 32px;
+    height: 32px;
+    margin: 17px 0 17px 0;
+}
+.nav .box .acc .acc_div{
+    width: 60%;
+    margin: 17px 0;
+}
+.nav .box .acc a{
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.nav .box .acc .login{
+    
+    font-size: 10px;
+}
+.nav .nav1 .menu .basket{
+    width:20%;
+    border: #d82e4d solid 2px;
+    margin: 12px 0;
+    border-radius: 10px 10px;
+}
+.nav .nav1 .menu .basket .basket0{
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+.nav .box .menu .basket .basket1{
+    font-size: 14px;
+    display: inline-block;
+    width: 50%;
+    padding: 15px 0;
+}
+.nav .box .menu .basket .basket2{
+    background-color: #d82e4d;
+    width:20px;
+    height: 25px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.nav .box .menu .System,
+.nav .box .menu .bill{
+    width:16%;
+}
+.nav .box .menu .System img,
+.nav .nav1 .menu .bill img{
+    margin: 17px 0 17px 10px;
+}
+.nav .box .menu .System a,
+.nav .nav1 .menu .bill a{
+    font-size: 14px;
+    width: 60%;
+    margin:19px 0;
+} 
+.nav .nav1 .box .flexible{
+    width: 100%;
+}
+.nav .nav1 .nav2{
+    position:absolute;
+    width: 100%;
+    left:0;
+    background-color: #e5677d;
+}
+.nav .nav1 .none-menu li{
+    float: left;
+    padding: 1% 2px;
+}
+.nav .nav1 .none-menu li a{
+    font-size:14px ;
+    color: #fff;
+    width: 100%;
+}
+.nav .nav1 .none-menu li svg{
+    width:10px;
+}
+.nav .nav1 .none-menu .hot .hot_1 li{
+    width: 100%;
+}
+.nav .nav1 .none-menu .hot .hot_1 li a{
+    color: #000;
+    width: 100%;
+}
+.nav .nav1 .none-menu .skincare,
+.nav .nav1 .none-menu .haircare,
+.nav .nav1 .none-menu .men,
+.nav .nav1 .none-menu .hot{
+    width:9%;
+ }
+ .nav .nav1 .none-menu .makeup,
+ .nav .nav1 .none-menu .items,
+ .nav .nav1 .none-menu .news{
+    width: 7%;
+ }
+ .nav .nav1 .none-menu .bodycare,
+ .nav .nav1 .none-menu .health,
+ .nav .nav1 .none-menu .brand
+ {
+    width: 11%;
+ }
+ .nav .nav1 .none-menu li a{
+    display: inline-block;
+    width: 100%;
+ }
+ .nav .nav1 .none-menu .hot .hot_1{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 15%;
+    top: 100%;
+    left: 2%;
+    
+}
+.nav .nav1 .none-menu .hot .hot_1 .hot_2{
+    position: absolute;
+    padding:0;
+    top: 0;
+    margin: 5px 0;
+}
+.nav .nav1 .none-menu .hot .hot_1 .hot_3{
+    padding: 0px;
+    margin: 5px 0;
+}
+ .nav .nav1 .none-menu li:hover .hot_1{
+    display:inline-block;
+ }
+ .nav .nav1 .none-menu .hot_1 li:hover{
+    background-color:#e5677d;
+ }
+/* .header_menu{
+    position: static;
+    width: 100%;
+    background-color:#e5677d;
+    
+}
+.header_menu .none-menu{
+    display: block;
+    width: 100%;
+    padding:20px;
+    background-color:#e5677d;
+    float: left;
+}
+.header_menu .none-menu li{
+    position: relative;
+    display: block;
+    width:10%;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.header_menu .none-menu .hot{
+   width: 8%;
+   margin: 0 5px 0 30px;
+}
+.header_menu .none-menu .makeup{
+    width: 6%;
+   
+}
+.header_menu .none-menu .skincare{
+    width: 8%;
+    
+}
+.header_menu .none-menu .bodycare{
+    width: 9%;
+}
+.header_menu .none-menu .haircare{
+    width: 8%;
+}
+.header_menu .none-menu .tool{
+    width: 8%;
+}
+.header_menu .none-menu .items{
+    width: 5%;
+}
+.header_menu .none-menu .men{
+    width: 8%;
+}
+.header_menu .none-menu .news{
+    width: 5%;
+}
+.header_menu .none-menu .brand{
+    width: 10%;
+}
+.header_menu .none-menu li a{
+    color: #fff;
+    font-size: 14px;
     text-decoration: none;
 }
-
-
-#banner{
-    position: relative;
-    width: 100%;
-    height: 70px;
+.header_menu .none-menu li svg{
+    width:10px;
 }
-#banner img{
-    position: absolute;
-    max-width: 100%;
-    height:auto;
-}
-header{
-    
-}
-header .nav{
-    background-color:#fff;
-    width: 100%;
-    height: 22%;
-}
-
-header .nav1{
-    position: relative;
-    background-color: #fff;
-    display: flex;
-    width: 100%;
-    height:70%;
-    padding: 0.1% 0.29%;
-} 
-
-header .nav1 .img{
-    position: relative;
-    background-color: #fff;
-    text-align: center;
-    height: 83px;
-    width:20%;
-}
-header .img img{
-    position: absolute;
-    cursor: pointer;
-    width: 70%;
-    right: 50%;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
-header .search{
-    position: relative;
-    display:flex;
-    background-color:#fff;
-    height: 36px;
-    width:30%;
-    left: 0;
-    top: 24px;
-    text-align: center;
-    line-height: 36px;
-    box-sizing: border-box;
-    float: right;
-}
-header .search>form{
-    position: absolute;
-    width: 100%;
-    height:36px;
-}
-header .search input[type=text]{
-    position: absolute;
-    text-align: center;
-    border:1px solid grey;
-    border-radius:20px 0 0 20px;
-    width: 80%;
-    height: 100%;
-    right: 20%; 
-}
-header .search .input-group button{
-    position: absolute;
-    background-color:#d82e4d;
-    width:10%;
-    height:100%;
-    right:10%;
-    top:0;
-    cursor: pointer;
-    border-radius: 0 20px 20px 0;
-}
-header .search .input-group svg{
-    color:#fff;
+.header_menu .none-menu li .hot_1{
     position:absolute;
-    width: 50%;
-    height: 50%;
-    right:25%;
-    bottom: 25%;
-}
-header .box{
-    position:absolute;
-    display: block;
-    height: 44px;
-    width: 50%;
-    left: 50%;
-    top: 25px;
-    text-align: center;
-}
-header .box li{
-    float: left;
-    display: block;
-    height: 44px;
-    padding-right:5px;
-}
-header .box>ul a{
-    color: #000;
-    font-size: 14px;
-    font-family: sans-serif;
-    font-weight: 400px;
-}
-header .box .sup{
-    padding-left: 55px;
-}
-header .box .sup>p
-{   
-    display: block;
-    height: 21px;
-    line-height: 21px;
-    font-size: 14px;
-    font-family: sans-serif;
-    font-weight: 400px;
-}
-header .box .sup >img{
-    position: relative;
-    right: 45px;
-    bottom: 15px;
-    width: 32px;
-    height: 32px;
-}
-header .box .sup >a{
-    position: relative;
-    bottom: 18px;
-    right: 47px;
-}
-header .box .acc{
-    left:10%;
-    padding-left: 48px;
-    padding-right:15px ;
-
-}
-header .box .acc>.acc1
-{   
-    display: inline-block;
-    height: 21px;
-    line-height: 21px;
-    
-}
-header .box .acc>img{
-    position: relative;
-    display: block;
-    width: 32px;
-    height: 32px;
-    right: 32px;
-    bottom: 16px;
-}
-header .box .acc>.login{
-    position: relative;
-    display: inline-block;
-    bottom:32px;
-    font-size: 12px;
-    right: 1px;
-}
-header .box .basket{
-    display: block;
-    width: 134px;
-    height: 44px;
-    border: #da677c solid 4px;
-    border-radius: 4px 4px 4px 4px;
-}
-header .box .basket img{
-    position: relative;
-    display: block;
-    top:4px;
-    height: 32px;
-    width: 32px;
-    bottom: 30px;
-}
-header .box .basket .basket1{
-    position: relative;
-    display: inline-block;
-    bottom: 22px;
-    left: 3px;
-}
-header .box .bill a{
-    position: relative;
-    left: 46px;
-    bottom: 36px;
-}
-header .box .bill a{   
-    display: block;
-    margin-top:5px ;
-}
-header .box .bill img{
-    position: relative; 
-    width: 32px;
-    top: 6px;
-    height: 32px;
-}
-header .box .System{
-    position: relative;
-    left:100px;
-}
-header .box .System img{
-    position: relative;
-    width: 32px;
-    height: 32px;
-    right: 46px;
-    top: 6px;
-}
-header .box .System a
-{   
-    position: relative;
-    display: block;
-    bottom: 30px;
-    left: 2px;
-}
-
-header .box li .n2:hover{
-    color: #ffaeb4;
-}
-header .nav2{
-    position: relative;
-    background-color: #e5677d;
-    height: 49px;
-    width: 100%;
-}
-header .nav2 li{
-    position: relative;
-    float: left;
-    padding-left:1%;
-    display: block;
-    height: 49px;
-    left: 5%;
-}
-header .nav2 a{
-    color: #fff;
-    text-align: center;
-    line-height: 49px;
-    display: block;
-    height: 49px;
-    font-weight: 400px;
-    font-size: 14px;
-    font-family: sans-serif;
-}
-header .nav2 .n2{
-    color: #fff;
-    width:11px; 
-    height:13px;
-}
-header .nav2 .none_menu_z1:hover,
-header .nav2 .none_menu_z1:hover .n2{
-    color:black;
-}
-header .nav2 .none-menu .n1{
-    font-size: 14px;
-    font-family: sans-serif;
-    font-weight: 400px;
-    cursor: pointer;
-    color: #000;
-}
-header .nav2 .menu1 .n1:hover{
-    background-color:antiquewhite;
-}
-header .nav2 .none-menu .x:hover .y{
-    display: inline-block;
-}
-header .nav2 .none-menu .makeup_img{
-    position: absolute; 
+    width:100%;
+    background-color: #fff;
+} */
+.header_menu{
     display: none;
-    left: 850%;
 }
-header .nav2 .skincare .skincare_img{
-    position: absolute; 
-    display: none;
-    right: -800%;
-}
-header .nav2 .none-menu .x:hover .makeup_img,
-header .nav2 .none-menu .x:hover .skincare_img
-{
-    display: block;
-}
-header .nav2 .menu1{
-    position: relative;
-    display:none;
-    /*background-color:#fff;
-    width: 200px;
-    height: 99px;*/
-}
-header .nav2 .menu1 .menu1_z1{
-    position: absolute;
-    background-color:#fff;
-    width: 200px;
-    height: 60px;
-    top: 0;
-}
-header .nav2 .menu1 .menu1_hot{
-    position:absolute;
-    display: inline-block;
-    color: #000;
-    font-size: 14px;
-    line-height: 30px;
-    width: 200px;
-    height: 30px;
-    top: -49px;
-    left: -10px;
-
-}
-header .nav2 .menu1 .menu1_mua{
-    position: absolute;
-    display: inline-block;
-    color: #000;
-    font-size: 14px;
-    line-height: 30px;
-    width: 200px;
-    height: 30px;
-    top:-20px;
-    right:-186px;
-}
-.skincare .z>a,
-.makeup .z>a{
-    line-height: 40px;  
-    color: #000;
-    height: 40px;
-    display: inline-block;
-}
-header .nav2 .menu2 table{
-    position:absolute;
-    width: 1250px;
-    height: 414px;
-    background-color: #fff;
-    box-sizing: border-box;
-    border: none;
-    border-collapse: collapse;
-    display:none;
-    left: -130%;
-
-}
-header .nav2 .menu3 table{
-    position:absolute;
-    width: 1250px;
-    height: 414px;
-    background-color: #fff;
-    box-sizing: border-box;
-    border: none;
-    border-collapse: collapse;
-    display:none;
-    left: -200%;
-
-}
-
-header .nav2 .menu2 table td>a{
-    height: 40px;
-    color: #000;
-    float: left;
-    line-height: 40px;
-}
-header .nav2 .table_z1>a{
-    padding-left: 50px;
-}
-header .nav2 .table_z3,
-header .nav2 .table_z4,
-header .nav2 .table_z2{
-    padding-left: 150px;
-}
-header .nav2 .menu3 table td>a{
-    height: 35px;
-    color: #000;
-    float: left;
-    line-height: 35px;
-}
-@media  only screen and (min-width:900px) and (max-width:1400px) {
-    #banner{
-        height: 50px;
+@media only screen and (min-width:990px) and (max-width:1296px){
+    .nav{
+        margin: 0 0 5% 0;
     }
-    header .nav1{
-        position: relative;
-        height: 100px;
-        width: 100%;
-        padding: 0 0;
+    .nav .nav1 .img{
+        width: 15%;
+        margin: 10px 0 10px 0;
     }
-    header .nav1 .box{
-        position: relative;
-        width: 50%;
-        height: 100px;
-        left: 0;
-        top: 0;
+    .nav .nav1 .search{
+        width: 25%;
     }
-    header .nav1 .box .n1{
-        position: absolute;
+    .nav .nav1 input[type=text]{
+        width: 70%;
+        margin:17px 0 17px 0;
+    }
+    .nav .nav1 .box{
+        
+        width:60%;
+    }
+    .nav .nav1 .menu .sup{
+        width: 18%;
+    }
+    
+    .nav .nav1 .menu .acc{
+        width: 18%;
+    }
+    .nav .nav1 .menu .basket{
+        width: 16%;
+    }
+    .nav .nav1 .menu .basket{
+        width:12%;
+        margin: 20px 0 20px 0;
+    }
+    .nav .nav1 .menu .basket .basket1{
+        display: none;
+    }
+    .nav .box .menu .System,
+    .nav .box .menu .bill{
         width:20%;
-        height: 100px;
-        padding: 0;
     }
-    header .nav1 .box .sup{
-        position: relative;
+    .nav .nav1 .none-menu{
+        padding-left: 2%;
     }
-    header .nav1 .box .sup p{
-        position: absolute;
-        width: 50px;
-        right: 0;
-        top: 20%;
+    .nav .nav1 .none-menu li{
+        width: 10%;
+        padding: 1% 0px;
     }
-    header .nav1 .box .sup img{
-        position: absolute;
-        top:25%;
-        left:10%;
+    .nav .nav1 .none-menu .hot .hot_1{
+        width: 20%;
     }
-    header .nav1 .box .sup .n2{
-        position: absolute;
-        width: 60%;
-        height: 20px;
-        line-height: 20px;
-        bottom:0;
-        top:60%;
+}
+@media only screen and (min-width:300px) and (max-width:989px){
+    
+    .nav .nav1 .togle{
+        order: 0;
+        display: block;
+        background-color: #d82e4d;
+        margin:20px 0;
+        width: 30%;
     }
-    header .nav1 .box .acc{
-        position: relative;
-        left: 0;
+    .nav .nav1 .img{
+        width: 40%;
+        order: 1;
+        margin: 20px 30px;
     }
-    header .nav1 .box .acc .acc1{
-        position: absolute;
-        width: 50px;
-        top:20%;
+    .nav .nav1 .basket_mobile{
+        order: 2;
+        display: block;
+        width: 10%;
+        background-color: #d82e4d;
+        margin:20px 30px;
     }
-    header .nav1 .box .acc img{
-        position: absolute;
-        left:20%;
-        top:25%;
-    }
-    header .nav1 .box .acc .login{
-        position: absolute;
-        left: 0;
-        top: 60%;
-    }
-    header .nav1 .box .basket{
-        position: relative;
-        border: none;
-    }
-    header .nav1 .box .basket img{
-        position: absolute;
-        top:25%;
-        left:50%;
-        transform: translateX(-50%);
-        border:solid #da677c;
-        border-radius: 2px 2px 2px 2px;
-
-    }
-    header .nav1 .box .basket .n2{
-       position: absolute;
-       display: inline-block;
-       left: 50%;
-       width: 50%;
-       transform: translateX(-50%);
-       top:60%;
-    }
-    header .nav1 .box .bill{
-        position: relative;
-        left: 0;
-    }
-    header .nav1 .box .bill img{
-        position:absolute;
-        left:0;
-        top:25%;
-    }
-    header .nav1 .box .bill .n2{
-        position: absolute;
-        display:inline-block;
-        width: 50%;
-        height: 10%;
-        top: 25%;
-        left: 32%;
-        margin: 0;
-    }
-    header .nav1 .box .System{
-        position: relative;
-        left: 0;
-    }
-    header .nav1 .box .System img{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        top: 25%;
-        right: 50%;
-    }
-    header .nav1 .box .System .n2{
-        position: absolute;
-        display: inline-block;
-        width: 50%;
-        height: 10%;
-        line-height: 14px;
-        left: 32%;
-        top: 25%;
-    }
-    header .nav2{
-        position: relative;
-        height: 70px!important;
+    .nav .nav1 .search{
         width: 100%;
-        padding:0;
-        box-sizing: border-box;
+        order:3;
     }
-
-    header .nav2 .x{
-        height: 70px!important;
-        width:8%;
-        padding: 10px 10px;
-        margin: 0 2px;
-        box-sizing: border-box;
+    .nav .nav1 input[type=text]{
+        width: 80%;
     }
-    header .nav2 .none_menu_z2{
-        line-height: 20px;
-        height: 70px;
+    .nav .nav1 .box{
+        order:4;
+        position: fixed;
+        margin: 0;
+        width: 70%;
     }
-    header .nav2 .menu1{
-        position: relative;
-        top:-10px;
-        height: 60px;
-        left: -8px;
-    }
-    header .nav2 .menu1_hot,
-    header .nav2 .menu1_mua
-    {
-        height: 30px;
-        line-height: 30px;
-    }
-    header .nav2 .menu1_mua{
-        position:relative;
-        top: -40px!important;
-    }
-    header .nav2 .menu1_hot{
-        position:relative;
-        top: -70px!important;
-    }
-    header .nav2 .menu2{
-        position: relative;
-        top: 20px;
-        right:8px ;
-    }
-    header .nav2 .makeup table{
-        position: relative;
-        width: 880px;
-        height: 400px;
-        padding-top: 10px;
-    }
-    header .nav2 .makeup table .table_z2>a,
-    header .nav2 .makeup table .table_z3>a,
-    header .nav2 .makeup table .table_z4>a,
-    header .nav2 .makeup table .table_z1>a{
-        font-size: 14px;
-        line-height: 5px;
+    .nav .nav1 .box .menu{
+        flex-direction: column;
+        flex-wrap: wrap;
         
     }
-    header .nav2 .makeup table .table_z3,
-    header .nav2 .makeup table .table_z4,
-    header .nav2 .makeup table .table_z2{
-        padding-left: 20px;
+    .nav .box .menu img{
+        display: none;
     }
-    header .nav2 .makeup .makeup_img{
-        position: absolute;
-        top: 0;
-        left: 500px;
+    .nav .nav1 .menu .sup{
+        display: none;
     }
-    header .nav2 .menu3{
-        position: relative;
-        top: 20px;
-        right:80%;
+    .nav .nav1 .menu .basket{
+        display: none;
     }
-    header .nav2 .skincare table{
-        position: absolute;
-        width: 880px;
-        height: 400px;
-        padding-top: 10px;
+    .nav .nav1 .menu .acc{
+        width: 40%;
+        order: 0;
+        margin: 0;
     }
-    header .nav2 .skincare table .table_z2>a,
-    header .nav2 .skincare table .table_z3>a,
-    header .nav2 .skincare table .table_z4>a,
-    header .nav2 .skincare table .table_z1>a{
-        font-size: 14px;
-        line-height: 5px;
-    }
-    header .nav2 .skincare table .table_z3,
-    header .nav2 .skincare table .table_z4,
-    header .nav2 .skincare table .table_z2{
-        padding-left: 20px;
-    }
-    header .nav2 .skincare .skincare_img{
-        top: 0;
-        right:0;
-        left: 500px;
-    }
-    #slider .banner__container{
-        width: 100%;
-        height: 100%;
-    }
-
-}
-@media only screen and (min-width:375px) and (max-width:899px){
-    header .nav{
-        position: relative;
+    .nav .nav1 .menu .acc img{
         display: block;
-        background-color:#000 ;
-        top: 0;
+        position: relative;
+        left: 5%;
+    }
+    .nav .nav1 .menu .bill{
+        width:50%;
+        order: 2;
+        margin:0;
+    }
+    .nav .nav1 .menu .bill a{
+       margin:10px 0;
+    }
+    .nav .nav1 .menu .bill img{
+        display:block;
+        margin: 0 10px;
+    }
+    .nav .nav1 .menu .System{
+        width: 50%;
+        order: 3;
+        margin:0;
+    }
+    .nav .nav1 .menu .System a{
+        margin:10px 0;
+    }
+    .nav .nav1 .menu .System img{
+        display: block;
+        margin: 0 10px;
+    }
+    .nav .nav1 .menu .flexible{
+         order: 1;
+         width: 100%;
+         margin: 0;
+        display: flex;
+         top:100%;
+         left: 0;
+    }
+    .nav .nav1 .nav2 {
+        background-color: #fff;
+        position: relative;
+        width:100%;
+        height: 50%;
+        margin:0;
+        left: 0;
         bottom: 0;
-        width: 70%;
-        height: 100%;
+    }
+    .nav .nav1 .nav2 .none-menu{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin:10px 0px;
+    }
+    .nav .nav1 .nav2 .none-menu li svg{
+        display: none;
+    }
+    .nav .nav1 .nav2 .none-menu li a{
+        color: #000;
+    }
+    .nav .nav1 .nav2 .none-menu li{
+        width: 50%;
+        margin: 10px;
+    }
+    .header_menu{
+        display: none;
+    }
+    .nav .nav1 .none-menu li:hover .hot_1{
+        display:none;
+     }
+    .container{
+        
     }
 }
