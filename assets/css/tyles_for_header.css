@@ -368,7 +368,14 @@
     }
 }
 @media only screen and (min-width:300px) and (max-width:989px){
-    
+    .box{
+        position: absolute;
+        z-index: 2;
+        display:none;
+    }
+    .nav{
+        margin:0;
+    }
     .nav .nav1 .togle{
         order: 0;
         display: block;
@@ -489,6 +496,7 @@
         display:none;
      }
     .container{
-        
+        position: absolute;
+        z-index:1;
     }
 }
