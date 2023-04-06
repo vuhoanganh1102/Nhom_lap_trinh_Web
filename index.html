@@ -62,10 +62,14 @@
                                 </div>
                             </li>
                             <li class="acc n1">
+        
                                 <img class="acc_img" src="./assets/img/account-icon.webp" alt="">
                                 <div class="acc_div">
                                     <a class="acc1 n2"href="#">Tài khoản</a>
                                     <a class="login n2"href="#">Đăng nhập</a>
+                                </div>
+                                <div onclick="off_taskbar()" class="close-button">
+                                    X
                                 </div>
                             </li>
                             <li class="basket n1">
@@ -164,11 +168,18 @@
                         </ul>
                     </div>
                     <div class="togle">
-                        <span></span>
+                        <button class="togle-click" onclick="on_taskbar()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
                     <div class="basket_mobile">
+                        <a class="basket0" href=""><img src="./assets/img/cart-icon.webp" alt=""></a>
                     </div>
+
                 </div>
+                <script src="./assets/on_off_taskbar.js"></script>
             </div>
     </header>
     <div id="slider">
@@ -706,6 +717,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="container__content--primary--items">
                     <div class="container--items--img">

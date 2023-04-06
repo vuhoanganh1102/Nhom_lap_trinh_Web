@@ -120,6 +120,9 @@
 .nav .nav1 .menu .acc{
     width: 16%;
 }
+.nav .nav1 .menu .acc .close-button{
+    display: none;
+}
 .nav .nav1 .menu .acc_img{
     width: 32px;
     height: 32px;
@@ -241,6 +244,9 @@
  .nav .nav1 .none-menu .hot_1 li:hover{
     background-color:#e5677d;
  }
+ .nav .nav1 .basket_mobile{
+    display: none;
+ }
 /* .header_menu{
     position: static;
     width: 100%;
@@ -310,7 +316,7 @@
 .header_menu{
     display: none;
 }
-@media only screen and (min-width:990px) and (max-width:1366px){
+@media only screen and (1008px < width <= 1366px){
     .nav{
         margin: 0 0 5% 0;
     }
@@ -333,6 +339,9 @@
     }
     .nav .nav1 .menu .acc{
         width: 18%;
+    }
+    .nav .nav1 .menu .acc .close-button{
+        display: none;
     }
     .nav .nav1 .menu .basket{
         width: 16%;
@@ -360,30 +369,48 @@
         width: 20%;
     }
 }
- @media only screen and (800px <= width <= 990px),(300px <= width <= 800px)
+ @media only screen and (600px <= width <= 1008px),(300px <= width < 600px)
  {
     .box{
         display:none;
+
     }
+    
     .nav .nav1 .togle{
-        order: 0;
-        display: block;
-        background-color: #d82e4d;
-        margin:20px 0;
-        top: -100px;
+        margin:20px 2%;
         width: 25%;
+        order: 0;
+        display: flex;
+        background-color: #d82e4d;
+        top: -100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav1 .togle-click{
+        display: flex;
+        flex-direction: column;
+        border:none;
+        cursor: pointer;
+    }
+    .nav1 .togle-click span{
+        width: 40px;
+        height: 7px;
+        background-color: #f1f1f1;
+        border:2px #d82e4d solid;
     }
     .nav .nav1 .img{
-        width: 40%;
+        width: 35%;
         order: 1;
         margin:20px 30px;
     }
     .nav .nav1 .basket_mobile{
         order: 2;
-        display: block;
-        width: 10%;
+        display: flex;
+        width: 27%;
         background-color: #d82e4d;
-        margin:20px 30px;
+        margin:20px 0;
+        justify-content: center;
+        align-items: center;
     }
     .nav .nav1 .search{
         width: 100%;
@@ -399,7 +426,7 @@
         position:absolute;
         margin: 0;
         width: 70%;
-        top: -40px;
+        top: -25%;
     }
     .nav .nav1 .box .menu{
         flex-direction: column;
@@ -414,6 +441,15 @@
     }
     .nav .nav1 .menu .basket{
         display: none;
+    }
+    .nav .nav1 .menu .acc .close-button{
+        cursor: pointer;
+        display: block;
+        position: relative;
+        left: 80%;
+        top:0;
+        border:solid #000 2px;
+        color: #000;
     }
     .nav .nav1 .menu .acc{
         width: 40%;
@@ -474,6 +510,7 @@
         flex-direction: column;
         width:100%;
         margin:10px 0px;
+        
     }
     .nav .nav1 .nav2 .none-menu li svg{
         display: none;
@@ -483,7 +520,7 @@
     }
     .nav .nav1 .nav2 .none-menu li{
         width: 50%;
-        margin: 10px;
+        margin: 5px;
     }
     .header_menu{
         display: none;
@@ -491,18 +528,51 @@
     .nav .nav1 .none-menu li:hover .hot_1{
         display:none;
      }
-    .container{
-        z-index:-1;
+
+}
+@media only screen and (600px <= width <= 820px){
+    .nav .nav1 .togle{
+        margin:20px 1%;
     }
-} 
-@media only screen and (300px <= width <= 599px){
+}
+@media only screen and (300px <= width < 600px){
     .nav .nav1 input[type=text]{
         width: 70%;
     }
     .nav .nav1 .box{
-        top: -20px;
+        top: -20%;
     }
     .nav .nav1 .img{
         margin:10px 10px;
+    }
+    .nav .nav1 .menu .acc{
+       width: 100%;
+    }
+    .nav .nav1 .nav2 .none-menu li{
+        width: 50%;
+        margin: 5px;
+    }
+    .nav .nav1 .menu .bill{
+        width:100%;
+    }
+    .nav .nav1 .menu .System{
+        width: 100%;
+    }
+    .nav .nav1 .basket_mobile{
+        width:25%;
+    }
+    .nav .nav1 .basket_mobile img{
+        width: 20px;
+    }
+    .nav .nav1 .menu .acc .close-button{
+        left: 10%;
+    }
+    .nav .nav1 .togle{
+        width: 30%;
+        margin:20px 2%;
+    }
+    .nav1 .togle-click span{
+        width: 20px;
+        height: 5px;
     }
 }
