@@ -10,11 +10,10 @@
     object-fit: cover;
 }
 #slider .banner_container{
+    display: flex;
     position: relative;
     width: 100%;
-    height: 475px;
     background-color: #fff!important;
-    display: block;
 }
 /* #slider .n1{
     position: relative;
@@ -42,26 +41,26 @@
 } */
 #slider .prev,.next{
     cursor: pointer;
-    position: absolute;
     display: block;
+    position: absolute;
     font-weight: 100px;
-    top: 60%;
     font-size: 20px;
     color: #755758;
     width: 44px;
     height: 44px;
     text-align: center;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 30px;
     background-color: rgba(182, 222, 216, 0.5);
     border: none;
 }
 #slider .next{
-    right: 6%;
+    top: 60%;
+    right: 0;
     line-height: 44px;
 }
 
 #slider .prev{
-    left: 6%;
+   top: 60%;
     line-height: 44px;
 }
 #slider .dot{
@@ -72,5 +71,51 @@
 #slider .next:hover{
     background-color: #fff;
 }
-
-
+@media only screen and (1008px <= width <= 1200px){
+    #slider .next{
+       top: 50%;
+    }
+    #slider .prev{
+        top: 50%;
+    }
+}
+@media only screen and (820px <= width <= 980px){
+    #slider .next{
+        top: 55%;
+     }
+     #slider .prev{
+         top: 55%;
+     }
+}
+@media only screen and (600px < width <= 800px){
+    #slider .next{
+        top: 45%;
+     }
+     #slider .prev{
+         top: 45%;
+     }
+}
+@media only screen and (500px <= width <=600px){
+    #slider .next{
+        top:35%;
+     }
+     #slider .prev{
+         top: 35%;
+     }
+}
+@media only screen and (400px <= width < 500px){
+    #slider .next{
+        top:34%;
+     }
+     #slider .prev{
+         top: 34%;
+     }
+}
+@media only screen and (300px <= width < 400px){
+    #slider .next{
+        top:28%;
+     }
+     #slider .prev{
+         top: 28%;
+     }
+}
