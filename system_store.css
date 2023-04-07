@@ -1,9 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-#system-store{
+body {
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+#system-store {
     padding: 0 0 30px;
 }
 
-#system-store .title{
+#system-store .title {
     text-align: center;
     color: var(--black-color);
     padding: 10px 0;
@@ -12,11 +22,12 @@
     font-weight: 400;
 }
 
-#system-store .body{
+#system-store .body {
     display: flex;
+    margin-top: 20px;
 }
 
-#system-store .card{
+#system-store .card {
     border: solid 1px #868686;
     border-radius: 20px;
     background-color: var(--white-color);
@@ -26,33 +37,37 @@
     word-wrap: break-word;
     display: flex;
     padding: 20px 35px;
-    margin: 10px 0 0;
+    margin-top: 10px;
+    margin-left: 50px;
     /* box-shadow: 0 62px; */
 }
 
-#system-store .body .card .find-store h5{
+
+
+#system-store .body .card .find-store h5 {
     font-weight: 700;
     line-height: 25px;
     font-size: 25px;
     margin-bottom: 25px;
     /* margin-top: 10px;
     margin-left: 5px; */
-    color:  var(--primary-color);
+    color: var(--primary-color);
     display: block;
+    margin-top: 35px;
 }
 
-#system-store .body .card .find-store label{
+#system-store .body .card .find-store label {
     margin: 0 0 15px;
     font-size: 16px;
     font-weight: 700;
     display: inline-block;
 }
 
-#system-store .body .card .find-store .form-group{
+#system-store .body .card .find-store .form-group {
     margin: 0 0 16px;
 }
 
-#system-store .body .card .find-store .form-control{
+#system-store .body .card .find-store .form-control {
     display: block;
     width: 100%;
     height: 36px;
@@ -66,24 +81,24 @@
     padding: 7px 12px;
 }
 
-#system-store .body .card .find-store .store__adress .media{
+#system-store .body .card .find-store .store__adress .media {
     display: flex;
 }
 
-#system-store .body .card .find-store .store__adress .media__left i{
+#system-store .body .card .find-store .store__adress .media__left i {
     color: var(--primary-color);
     font-size: 20px;
     display: block;
     margin-top: 20px;
 }
 
-#system-store .body .card .find-store .store__adress .media-body{
+#system-store .body .card .find-store .store__adress .media-body {
     margin-top: 18px;
     margin-left: 10px;
     width: 100%;
 }
 
-#system-store .body .card .find-store .store__adress .media-body p{
+#system-store .body .card .find-store .store__adress .media-body p {
     margin: 0 0 16px;
     font-size: 16px;
     line-height: 25px;
@@ -96,36 +111,37 @@
     margin: 10px 0 0;
     padding: 0 5px 0 25px;
     border: none;
-    
+
 }
 
-#system-store .body .store-map .googlemap{
+#system-store .body .store-map .googlemap {
     height: 100%;
     width: 100%;
     border-radius: 20px;
-}   
+}
 
-@media only screen and (min-width: 741px){
-    #system-store .card{
+@media only screen and (min-width: 741px) {
+    #system-store .card {
         width: 100%;
         min-width: 350px;
     }
 
-    .store-map{
+    .store-map {
         max-width: 980px;
     }
 
 }
 
-@media only screen and (max-width: 740px){
-    #system-store .body{
+@media only screen and (max-width: 740px) {
+    #system-store .body {
         display: block;
     }
-    #system-store .card{
+
+    #system-store .card {
         max-width: 700px;
     }
 
-    .find-store{
+    .find-store {
         width: 100%;
     }
 
