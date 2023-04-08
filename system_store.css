@@ -30,7 +30,6 @@ body {
     border: solid 1px #868686;
     border-radius: 20px;
     background-color: var(--white-color);
-    position: relative;
     max-width: 350px;
     word-wrap: break-word;
     display: flex;
