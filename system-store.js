@@ -48,7 +48,6 @@ function renderBranches(district) {
         option.innerHTML = branch;
         branchSelect.appendChild(option);
     });
-
 }
 
 // Lắng nghe sự kiện khi tỉnh thành phố được chọn
@@ -83,7 +82,6 @@ function validateSelectCity() {
 //trả về quận, huyện được chọn
 function validateSelectDistrict() {
     var options = document.getElementById("district");
-
     var html = '';
     for (var i = 0; i < options.length; i++) {
         if (options[i].selected) {
@@ -94,10 +92,9 @@ function validateSelectDistrict() {
     return html;
 }
 
-//trả về chi nhành được chọn
+//trả về chi nhánh được chọn
 function validateSelectShop() {
     var options = document.getElementById("shop");
-
     var html = '';
     for (var i = 0; i < options.length; i++) {
         if (options[i].selected) {
@@ -107,7 +104,6 @@ function validateSelectShop() {
     }
     return html;
 }
-
 
 const maps = [
     [1, 'Hà Nội', 'Hà Đông', 'Chi nhánh Nguyễn Trãi', '244 - 252 Nguyễn Trãi, Hà Đông, Hà Nội', '☎ 1900 2631 - Nhánh 107'],
@@ -126,6 +122,7 @@ const maps = [
     [14, 'Cần Thơ', 'Ninh Kiều', 'Chi nhánh Vincom Hùng Vương', '32-34 Nguyễn Trãi, Phường Ba Đình, Thành Phố Thanh Hóa, Tỉnh Thanh Hóa', '☎ 1900 2631 - Nhánh 205']
 ];
 
+//thay đổi địa chỉ, số điện thoại
 function mapChange() {
     const map = document.getElementById("store-map");
     const shopAdress = document.getElementById("adress");
@@ -135,14 +132,17 @@ function mapChange() {
     let district = validateSelectDistrict();
     let shop = validateSelectShop();
     let id = 0;
+    
     for (let i = 0; i < maps.length; i++) {
         if (maps[i][1] === city && maps[i][2] === district && maps[i][3] === shop) {
-            shopAdress.textContent = maps[i][4];
-            shopPhone.textContent = maps[i][5];
+            shopAdress.textContent = maps[i][4]; // thay đổi nội dung địa chỉ
+            shopPhone.textContent = maps[i][5]; // thay đổi nội dung số điện thoại
             id = i + 1;
             break;
         }
     }
+    
+    //thay đổi địa chỉ hiện trên google map
     if (id == 1) {
         map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3725.130907933317!2d105.797005!3d20.987389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acbf6b1cd94f%3A0xd6475d5913232d95!2sSammi%20Shop!5e0!3m2!1sen!2sus!4v1680954139151!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
     }
