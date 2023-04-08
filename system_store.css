@@ -38,7 +38,7 @@ body {
     display: flex;
     padding: 20px 35px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 24px;
     /* box-shadow: 0 62px; */
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 #system-store .body .card .find-store .store__adress .media-body {
-    margin-top: 18px;
+    margin-top: -18px;
     margin-left: 10px;
     width: 100%;
 }
@@ -105,7 +105,7 @@ body {
     display: block;
 }
 
-#system-store .body .store-map {
+#system-store .body #store-map {
     width: 980px;
     height: 600px;
     margin: 10px 0 0;
@@ -114,7 +114,7 @@ body {
 
 }
 
-#system-store .body .store-map .googlemap {
+#system-store .body #store-map iframe {
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -126,7 +126,7 @@ body {
         min-width: 350px;
     }
 
-    .store-map {
+    #store-map {
         max-width: 980px;
     }
 
@@ -143,6 +143,11 @@ body {
 
     .find-store {
         width: 100%;
+    }
+
+    #store-map {
+        display: block;
+        max-width: 100%;
     }
 
 }

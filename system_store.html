@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./assets/css/tyles_for_header.css">
     <link rel="stylesheet" href="./assets/css/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
@@ -31,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+    <script defer src="system-store.js"></script>
 </head>
 
 <body>
@@ -265,42 +265,33 @@
                     <div class="form-group">
                         <label>Chọn tỉnh thành</label>
                         <div class="custom-select">
-                            <select id="city" class="form-control">
+                            <select id="city" class="form-control" onclick="validateSelectCity()">
                                 <option value="Hà Nội">Hà Nội</option>
                                 <option value="Hồ Chí Minh">Hồ Chí Minh</option>
                                 <option value="Hải Phòng">Hải Phòng</option>
                                 <option value="Quảng Ninh">Quảng Ninh</option>
-                                <option value="Bắc Ninh">Cần Thơ</option>
+                                <option value="Bắc Ninh">Bắc Ninh</option>
                                 <option value="Thanh Hoá">Thanh Hoá</option>
                                 <option value="Cần Thơ">Cần Thơ</option>
                             </select>
                         </div>
-
-
                     </div>
                     <div class="form-group">
                         <label>Chọn quận huyện</label>
                         <div class="custom-select">
-                            <select id="district" class="form-control">
-                                <option value="Cầu Giấy">Cầu Giấy</option>
+                            <select id="district" class="form-control" onclick="validateSelectDistrict()">
                                 <option value="Hà Đông">Hà Đông</option>
-                                <option value="Hai Bà Trưng">Hai Bà Trưng</option>
+                                <option value="Cầu Giấy">Cầu Giấy</option>
                                 <option value="Đống Đa">Đống Đa</option>
-                                <option value="Hoàn Kiếm">Hoàn Kiếm</option>
-                                <option value="Long Biên">Long Biên</option>
-                                <option value="Nam Từ Liêm">Nam Từ Liêm</option>
-                                <option value="Ba Đình">Ba Đình</option>
-                                <option value="Thanh Xuân">Thanh Xuân</option>
-                                <option value="Gia Lâm">Gia Lâm</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Chọn cửa hàng</label>
                         <div class="custom-select">
-                            <select id="shop" class="form-control">
-                                <option value="Chi nhánh Trần Đại Nghĩa">Chi nhánh Trần Đại Nghĩa</option>
-                                <option value="Chi nhánh Vincom Times City">Chi nhánh Vincom Times City</option>
+                            <select id="shop" class="form-control" onclick="validateSelectShop()" onchange="mapChange()">
+                                <option value="Chi nhánh Nguyễn Trãi">Chi nhánh Nguyễn Trãi</option>
+                                <option value="Chi nhánh Quang Trung">Chi nhánh Quang Trung</option>
                             </select>
                         </div>
                     </div>
@@ -312,9 +303,9 @@
                             <div class="media-body">
                                 <h5>Địa chỉ</h5>
                                 <div id="shop-infor">
-                                    <p>129 Trần Đại Nghĩa, Hai Bà Trưng, Hà Nội
-                                        <br>
-                                        ☎ 1900 2631 - Nhánh 122
+                                    <p id = "adress">244 - 252 Nguyễn Trãi, Hà Đông, Hà Nội </p>
+                                    <p id = "phone">
+                                        ☎ 1900 2631 - Nhánh 107
                                     </p>
                                 </div>
                             </div>
@@ -323,11 +314,11 @@
                 </div>
             </div>
 
-            <div class="store-map">
-                <iframe class="googlemap"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.130912921479!2d105.7970046!3d20.987388799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acbf6b1cd94f%3A0xd6475d5913232d95!2sSammi%20Shop!5e0!3m2!1svi!2s!4v1680795499123!5m2!1svi!2s"
-                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="store-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3725.130907933317!2d105.797005!3d20.987389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acbf6b1cd94f%3A0xd6475d5913232d95!2sSammi%20Shop!5e0!3m2!1sen!2sus!4v1680954139151!5m2!1sen!2sus"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>;
             </div>
         </div>
     </div>
