@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    width: 100%;
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+}
+
+.row .col-1 {
+    flex: 1.5;
+    background-color: #f6f6f6;
+    padding: 30px 20px 0 50px;
+}
+
+.col-1 h1 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.icon {
+    display: flex;
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.icon li:nth-child(1),
+.icon li:nth-child(2),
+.icon li:nth-child(3),
+.icon li:nth-child(4),
+.icon li:nth-child(5),
+.icon li:nth-child(6) {
+    margin-right: 16px;
+}
+
+.col-1 .icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.col-1 p {
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 16px 0px;
+    font-weight: 400;
+}
+
+.col-1 .col-1-logo img {
+    width: 350px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.col-1 .copyright p {
+    font-size: 14px;
+}
+
+.col-1 .copyright p a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.row .col-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 3;
+    /* margin-left: 20px; */
+    background-color: #efefef;
+    padding: 30px 40px 0 20px;
+}
+
+.col-2 li {
+    list-style: none;
+}
+
+.col-2 h1 {
+    font-size: 18px;
+}
+
+.col-2 .list {
+    line-height: 2.2;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.col-2 .list li {
+    font-weight: 400;
+}
+
+.col-2 .list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.col-2 .list li a:hover {
+    color: #d82e4d;
+}
+
+.col-2 .col-2-col1 {
+    flex: 2;
+}
+
+.col-2 .col-2-col2 {
+    flex: 3;
+}
+
+.col-2 .col-2-col3 {
+    flex: 3;
+}
+
+.col-2 .col-2-col3 .input-form {
+    margin-top: 15px;
+    display: flex;
+}
+
+.input-form .input-form-email {
+    width: 190px;
+    height: 36px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #ebebeb;
+    padding: 0 50px 0 15px;
+    border-radius: 25px 0 0 25px;
+}
+
+.input-form .input-form-btn {
+    width: 100px;
+    height: 36px;
+    padding: 7px 20px;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    background-color: #d82e4d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.input-form .input-form-btn:hover {
+    background-color: #db1c3f;
+}
+
+.method-payment .method-payment-icon {
+    display: flex;
+    list-style: none;
+    margin: 20px 0 20px 0;
+}
+
+.method-payment-icon li:nth-child(1),
+.method-payment-icon li:nth-child(2),
+.method-payment-icon li:nth-child(3),
+.method-payment-icon li:nth-child(4) {
+    margin-right: 16px;
+}
+
+.method-payment .method-payment-icon img {
+    height: 40px;
+}
+
+.method-payment .method-payment-icon .visa {
+    width: 76px;
+}
+
+.method-payment .method-payment-icon .mastercard {
+    width: 48px;
+}
+
+.method-payment .method-payment-icon .jcb {
+    width: 42px;
+}
+
+.method-payment .method-payment-icon .vnpay {
+    width: 80px;
+}
+
+.method-payment .method-payment-icon .momo {
+    width: 80px;
+}
+
+.method-payment .download-app {
+    margin-top: 20px;
+}
+
+.download-app .download-app-container .logo-app {
+    object-fit: contain;
+}
+
+.download-app-container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.download-app-container .logo-download {
+    margin-top: 25px;
+}
+
+.download-app-container .logo-download a {
+    text-decoration: none;
+}
+
+.download-app-container .logo-download .app-store-logo img {
+    margin-bottom: 10px;
+}
+
+
+/* Mobile: width < 740px
+Tablet:width >=740px and width < 1024px
+PC: width >= 1024px
+*/
+
+/* mobile */
+@media only screen and (max-width: 739px) {
+    .row .col-2 {
+        flex-direction: column;
+        background-color: #f6f6f6;
+    }
+
+    .col-2 .col-2-col1 {
+        margin-left: 30px;
+    }
+
+    .col-2 .col-2-col2 {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .col-2 .col-2-col3 {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .input-form .input-form-email {
+        width: 100%;
+    }
+
+    .col-2-col3 .method-payment {
+        margin-top: 10px;
+    }
+
+    .download-app-container .logo-download {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .row .col-2 {
+        flex-direction: column;
+        background-color: #f6f6f6;
+    }
+
+    .col-2 .col-2-col1 {
+        margin-left: 30px;
+    }
+
+    .col-2 .col-2-col2 {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .col-2 .col-2-col3 {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .input-form .input-form-email {
+        width: 100%;
+    }
+
+    .col-2-col3 .method-payment {
+        margin-top: 10px;
+    }
+
+    .download-app-container .logo-download {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+}
