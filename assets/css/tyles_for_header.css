@@ -244,6 +244,52 @@
  .nav .nav1 .none-menu .hot_1 li:hover{
     background-color:#e5677d;
  }
+.makeup .mega-menu-trang-diem,
+.skincare .mega-menu-cham-da{
+    position: absolute;
+    background-color:#fff;
+    display:none;
+    justify-content: center;
+    flex-direction: row;
+    left: 1%;
+    right:1%;
+    top: 100%;
+}
+.skincare .mega-menu-cham-da .mega-menu-inner,
+.makeup .mega-menu-trang-diem .mega-menu-inner{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+.makeup .mega-menu-trang-diem .mega-menu-inner div,
+.skincare .mega-menu-cham-da .mega-menu-inner div{
+    margin-left: 30px;
+}
+.makeup .mega-menu-trang-diem .mega-menu-inner div li a,
+.makeup .mega-menu-trang-diem .mega-menu-inner .item-mega-menu h3 a,
+.skincare .mega-menu-cham-da .mega-menu-inner div li a,
+.skincare .mega-menu-cham-da .mega-menu-inner .item-mega-menu h3 a
+{
+    color: #000;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom:10px;
+}
+.makeup .mega-menu-trang-diem .item-mega-menu img,
+.skincare .mega-menu-cham-da .item-mega-menu img{
+    margin-left: 50px;
+    width:251px;
+    height: 356px;
+}
+.nav .nav1 .none-menu li:hover .mega-menu-trang-diem,
+.nav .nav1 .none-menu li:hover .mega-menu-cham-da
+{
+    display:flex;
+ }
+ .makeup .mega-menu-trang-diem .mega-menu-inner div li:hover,
+ .skincare .mega-menu-cham-da .mega-menu-inner div li:hover{
+    background-color: #e5677d;
+ }
  .nav .nav1 .basket_mobile{
     display: none;
  }
