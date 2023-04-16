@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="static/css/signin.css">
     <link rel="stylesheet" href="static/css/sign-up.css">
     <link rel="stylesheet" href="static/css/footer.css">
     <link rel="stylesheet" href="static/css/styles_for_slider.css">
@@ -176,6 +177,12 @@
             <div class="register-form-header">
                 <h3>thông tin cá nhân</h3>
             </div>
+            <div class="login__forget" style="color:red;">
+                <% String errorMessage = (String) request.getAttribute("errorMessage");
+                    if(errorMessage==null){errorMessage="";}
+                %>
+                <%=errorMessage %>
+            </div>
             <form action="signup" method="post" class="register-form-container">
                 <div class="register-form-form">
                     <label  class="register-form-label">Họ <span class="required">*</span></label><br>
@@ -188,11 +195,11 @@
                 <div class="register-form-form">
                     <label  class="register-form-label">Số điện thoại <span
                             class="required">*</span></label><br>
-                    <input type="text" class="register-form-input" name="contact" placeholder="Số điện thoại" required>
+                    <input type="text" pattern="\d+" class="register-form-input" name="contact" placeholder="Số điện thoại" required>
                 </div>
                 <div class="register-form-form">
                     <label  class="register-form-label">Email <span class="required">*</span></label><br>
-                    <input type="text" class="register-form-input" name="username" placeholder="Email" required>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" class="register-form-input" name="username" placeholder="Email" required>
                 </div>
                 <div class="register-form-form">
                     <label  class="register-form-label">Mật khẩu <span
