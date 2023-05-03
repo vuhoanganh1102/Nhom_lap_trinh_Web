@@ -7,57 +7,430 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samishop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/main.css">
-    <link rel="stylesheet" href="./assets/base.css">
-    <link rel="stylesheet" href="find-product.css">
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script defer src="product-detail.js"></script>
 
 <body>
+
     <div class="product_container">
-        <div class="product_container--img">
-            <img src="./assets/img/items1.jpg" alt="" class="img--product">
-        </div>
-        <div class="product_container--info">
-            <h3 class="product_container--name">Freska</h3>
-            <h2 class="product_container--title">
-                Freska Nước tẩy trang Micellar Sensitive Cleansing Water 400ml (IP04)
-            </h2>
-            <p class="product_status">
-                Tình trạng:
-                <span class="product_status--info">Còn hàng</span>
-            </p>
-            <div class="product_container--price">
-                <div class="product_container--sale-price">142,560₫
+        <div class="product_container--start">
+            <div class="product_container--img">
+                <img src="./assets/img/items1.jpg" alt="" class="img--product">
+            </div>
+            <div class="product_container--info">
+                <h3 class="product_container--name">Freska</h3>
+                <h2 class="product_container--title">
+                    Serum chống nắng Biore UV Anti-pollution Body Care Serum Age Defense SPF50+/PA+++ 150ml (IP01)
+                </h2>
+                <p class="product_status">
+                    Tình trạng:
+                    <span class="product_status--info">Còn hàng</span>
+                </p>
+                <div class="product_container--price">
+                    <div class="product_container--sale-price">142,560₫
+                    </div>
+                    <div class="product_container--cost-price">198,000₫
+                    </div>
+                    <div class="product_container--percent-price">-28%
+                    </div>
                 </div>
-                <div class="product_container--cost-price">198,000₫
+                <div class="flashsale__bottom flashsale__color">
+                    <div class="flashsale_bottom--title">
+                        <h2>ƯU ĐÃI HOT, ĐỪNG BỎ LỠ!!</h2>
+                        <p>Sản phẩm sẽ trở về giá gốc khi hết giờ</p>
+                    </div>
+                    <div class="flashsale__label">
+                        <b class="flashsale__sold-qty">1577</b> sản phẩm đã bán
+                    </div>
+                    <div class="flashsale__progressbar">
+                        <div class="flashsale___percent" style="width: 53%;">
+
+                        </div>
+                    </div>
                 </div>
-                <div class="product_container--percent-price">-28%
+                <div class="product__number">
+                    <label>Số lượng:</label>
+                    <div class="product__number--input--number">
+                        <button class="button__number" id="sub--product" onclick="subProduct()">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input id="number--product" type="text" value="1" />
+                        <button class="button__number" id="add--product" onclick="addProduct()">
+                            <i class="fa-duotone fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product__btn">
+                    <button class="product__btn--add--cart product-btn-buy">
+                        <a href="" title="Mua sắm ngay" class="btn-buy">Mua Ngay</a>
+                    </button>
+                    <button class="product__btn--add--cart product--btn-add">
+                        <a href="" title="Mua sắm ngay" class="btn--add-cart">Thêm vào giỏ</a>
+                    </button>
                 </div>
             </div>
-            <div class="flashsale__bottom flashsale__color">
-                <div class="flashsale_bottom--title">
-                    <h2>ƯU ĐÃI HOT, ĐỪNG BỎ LỠ!!</h2>
-                    <p>Sản phẩm sẽ trở về giá gốc khi hết giờ</p>
-                </div>
-                <div class="flashsale__label">
-                    <b class="flashsale__sold-qty">1577</b> sản phẩm đã bán
-                </div>
-                <div class="flashsale__progressbar">
-                    <div class="flashsale___percent" style="width: 53%;">
+        </div>
 
+        <div class="product_container--description">
+            <div class="title">
+                <h2>Mô tả sản phẩm</h2>
+                <hr>
+            </div>
+            <div class="content">
+                <p><strong>Serum chống nắng Bioré UV Anti-pollution Body Care Serum Age Defense SPF50+ PA+++</strong>
+                    với hoạt chất
+                    Hyaluronic Acid cùng Vitamin E nên sản phẩm không chỉ có khả năng chống nắng hiệu quả mà còn giúp
+                    dưỡng ẩm, giúp da luôn mềm mại, sáng bóng.</p>
+                <p class="content--img">
+                    <img src="./assets/img/items1.jpg" alt="">
+                </p>
+                <p class="content--object--use">
+                    <strong>Loại da phù hợp</strong>
+                    <!-- <br> -->
+                <ul>
+                    <li>Phù hợp mọi loại da</li>
+                </ul>
+                </p>
+
+                <p class="content--effect">
+                    <strong>Công dụng</strong>
+                    <br>
+                <ul>
+                    <li>Độ chống nắng SPF 50+ PA+++ bảo vệ da khỏi các tịa UVA, UVB, ngăn ngừa xỉn màu, đốm nâu và làn
+                        da không đều màu.</li>
+                    <li>Công nghệ Anti-Pollution màng chắn kháng bụi vượt trội bảo vệ da khỏi bụi bẩn, kể cả bụi mịn
+                        PM2.5. </li>
+                </ul>
+                </p>
+
+                <p class="content--img">
+                    <img src="./assets/img/items1.jpg" alt="">
+                </p>
+                <p class="content--component">
+                    <strong>Thành phần chi tiết:</strong>
+                    <br>
+                    <br>
+                    Water (Aqua), Alcohol, Ethylhexyl Methoxycinnamate, Isopropyl Palmitate, Titanium Dioxide,
+                    Dimethicone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Dextrin Palmitate, Sorbitan Stearate,
+                    Fragrance (Parfum), Aluminum Hydroxide, Acrylates/C10-30 Alkyl Acrylate Crosspolymer,
+                    Polysilicone-9, Stearic Acid, Aminomethyl Propanol, Potassium Hydroxide, Disodium EDTA, PEG-400,
+                    Lauryl Methacrylate/Sodium Methacrylate Crosspolymer, Agar, Isoceteth-20, BHT, Arginine, Cetyl
+                    Alcohol, Tocopheryl Acetate, Soluble Collagen, Phenoxyethanol.
+                </p>
+                <p class="content--user--manual">
+                    <strong>Hướng dẫn sử dụng</strong>
+                    <br>
+                <ul>
+                    <li>Lấy một lượng thích hợp, thoa đều trên khắp bề mặt da trước khi đi ra nắng.</li>
+                    <li>Để đạt hiệu quả tốt nhất, nên thoa lại sau khi ra mồ hôi hoặc bơi lâu dưới nước.</li>
+                </ul>
+                </p>
+
+                <p class="content--storage">
+                    <strong>Bảo quản</strong>
+                    <br>
+                <ul>
+                    <li>Để nơi khô ráo, thoáng mát.</li>
+                    <li>Tránh ánh nắng trực tiếp.</li>
+                </ul>
+                </p>
+
+                <p class="content--inform">
+                    <strong>Thông số sản phẩm</strong>
+                    <br>
+                <ul>
+                    <li><strong>Thương hiệu:</strong> Bioré</li>
+                    <li><strong>Xuất xứ:</strong> Nhật Bản</li>
+                </ul>
+                </p>
+
+            </div>
+        </div>
+        <div class="product_container--another">
+            <div class="title">
+                <h2>Sản phẩm cùng loại</h2>
+            </div>
+            <div class="content">
+
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items1.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items1-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -73%
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">SIMPLE</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                COMBO 2 Simple Nước Hoa Hồng Kind To Skin Soothing Facial Toner 200ml (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>109,000₫</b></span>
+                                <span class="compare-price">400,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">1577</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 53%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items2.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items2-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -25%
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">BNBG</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Whitening Jelly Mask - Vitamin C (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>165,000₫</b></span>
+                                <span class="compare-price">220,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">2563</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 85%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items3.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items3-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -28%
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">DR.G</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Dr.G Kem chống nắng Brightening Up Sun+ SPF50+ PA+++
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>381,000₫</b></span>
+                                <span class="compare-price">530,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">2384</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 80%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items4.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items4-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -25%
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">BNBG</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                Combo 10 Mặt nạ dưỡng da BNBG Vita Genic Relaxing Jelly Mask - Vitamin B (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>165,000₫</b></span>
+                                <span class="compare-price">220,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">1994</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 67%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content--primary--items">
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items5.jpg" alt="" class="container__product-img img-primary">
+                        </a>
+                    </div>
+                    <div class="container--items--img">
+                        <a href="#">
+                            <img src="./assets/img/items5-1.jpg" alt="" class="container__product-img img-secondary">
+                        </a>
+                    </div>
+                    <div class="label_product">
+                        <div class="label_wrapper">
+                            -24%
+                        </div>
+                    </div>
+                    <div class="product--action">
+                        <div class="group__prodcut--action">
+                            <a href="#" class="product--action--links btn">
+                                <i class="fa-solid fa-magnifying-glass product__action--icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container--items-content">
+                        <span class="product-vendor">EXCLUSIVE</span>
+                        <h3 class="product-name">
+                            <a href="#" class="product-name-link">
+                                COMBO 2 Exclusive Tẩy da chết toàn thân Scrub Coffee & Cinnamon 380ml (IP01)
+                            </a>
+                        </h3>
+                        <div class="product-price-box">
+                            <div class="product-price">
+                                <span class="price"><b>169,000₫</b></span>
+                                <span class="compare-price">222,000₫</span>
+                                <div class="compare-price--pseudo"></div>
+                            </div>
+                            <button class="add--cart" title="Thêm giở hàng">
+                                <a href="#" class="add--cart--link">
+                                    <ion-icon name="add-outline" class="icon-add-cart"></ion-icon>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="flashsale__bottom">
+                            <div class="flashsale__label">
+                                <b class="flashsale__sold-qty">1215</b> sản phẩm đã bán
+                            </div>
+                            <div class="flashsale__progressbar">
+                                <div class="flashsale___percent" style="width: 41%;">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="product__btn--add--cart product-btn-buy">
-                <a href="" title="Mua sắm ngay" class="btn-buy">Mua Ngay</a>
-            </button>
-            <button class="product__btn--add--cart product--btn-add">
-                <a href="" title="Mua sắm ngay" class="btn--add-cart">Thêm vào giỏ</a>
-            </button>
         </div>
     </div>
 </body>

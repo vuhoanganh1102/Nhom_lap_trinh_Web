@@ -1,8 +1,12 @@
 .product_container {
-    display: flex;
+    margin: auto;
+    /* display: flex; */
     padding: 40px 50px;
 }
 
+.product_container--start{
+    display: flex;
+}
 .img--product {
     display: block;
     width: 450px;
@@ -12,7 +16,7 @@
 
 .product_container--info {
     padding-left: 50px;
-    width: 40%;
+    width: 50%;
 }
 
 .product_container--name {
@@ -94,6 +98,55 @@
     background-color: #fffee8;
     padding: 15px;
 }
+
+.product__number{
+    display: flex;
+    margin-top: 30px;
+    font-size: 16px;    
+}
+
+.product__number label{
+    margin-top: 7px;
+    margin-right: 20px;
+    color: #727272;
+}
+
+.product__number .button__number{
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ced4ce;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+.product__number .button__number:hover{
+    cursor: pointer;
+}
+.product__number .button__number i{
+    width: 16px;
+    color: #8C9196;
+}
+.product__number
+.product__btn{
+    display: flex;
+}
+
+.product__btn{
+    margin-top: 5px;
+}
+
+.product__number input{
+    height: 30px;
+    width: 65px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.product__number input:focus{
+    border: 1px solid red;
+}
+
 .product__btn--add--cart {
     border: 0;
     background-color: transparent;
@@ -131,3 +184,40 @@
 .btn--add-cart {
     margin-left: 10px;
 }
+
+.product_container--description{
+    width: 90%;
+    margin: 100px 0px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.product_container--description .title{
+    font-size: 20px;
+}
+
+.product_container--description .title hr{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: -5px;
+}
+
+.product_container--description p{
+    line-height: 24px;
+}
+
+.product_container--description .content--img{
+    text-align: center;
+}
+
+.product_container--description ul{
+    font-size: 16px;
+    padding-left: 50px;
+    line-height: 24px;
+}
+
+.product_container--another .content{
+    display: flex;
+}
+
+
