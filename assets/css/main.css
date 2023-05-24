@@ -737,6 +737,18 @@
 }
 
 /* blog */
+.box_blog {
+    padding: 12px 40px;
+    width: 100%;
+}
+
+.blog__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .blog {
     width: 100%;
 }
