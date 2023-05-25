@@ -11,7 +11,7 @@ public class UserDao {
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         try (Connection connection = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/laptrinhweb?useSSL=false", "root", "nam01669383590.");
+                .getConnection("jdbc:mysql://localhost:3306/demo?useSSL=false", "root", "chuan28112002");
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection
@@ -35,7 +35,7 @@ public class UserDao {
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         try (Connection connection = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/laptrinhweb?useSSL=false", "root", "nam01669383590.");
+                .getConnection("jdbc:mysql://localhost:3306/demo?useSSL=false", "root", "chuan28112002");
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection
@@ -63,7 +63,7 @@ public class UserDao {
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         try (Connection connection = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/laptrinhweb", "root", "nam01669383590.");
+                .getConnection("jdbc:mysql://localhost:3306/demo", "root", "chuan28112002");
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection
@@ -97,5 +97,21 @@ public class UserDao {
                 }
             }
         }
+    }
+    public boolean updatePassword(String email, String newpass) throws ClassNotFoundException{
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        try (Connection connection = DriverManager
+                .getConnection("jdbc:mysql://localhost:3306/demo", "root", "chuan28112002");
+             PreparedStatement preparedStatement = connection
+                     .prepareStatement("update customer set password = ? where email = ?")) {
+            preparedStatement.setString(1, newpass);
+            preparedStatement.setString(2, email);
+            preparedStatement.executeUpdate();
+            System.out.println(preparedStatement);
+            return true;
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return false;
     }
 }
